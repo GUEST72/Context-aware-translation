@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────
+# Terminology Memory Extraction System
+# Python Dependencies
+# ──────────────────────────────────────────────
+
+# --- Core NLP ---
+spacy>=3.5,<4.0
+
+# --- Statistical / Utility ---
+scikit-learn>=1.2
+
+# --- Translation (optional — English → Arabic) ---
+transformers>=4.30
+sentencepiece>=0.1.99
+torch>=2.0
+
+# --- Embedding Generation (optional) ---
+sentence-transformers>=2.2
+
+# ──────────────────────────────────────────────
+# After installing, download the spaCy model:
+#   python -m spacy download en_core_web_sm
+# ──────────────────────────────────────────────

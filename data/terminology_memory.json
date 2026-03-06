@@ -1,0 +1,6037 @@
+{
+  "book_title": "Foundations of Natural Language Processing and Machine Learning",
+  "total_terms": 309,
+  "terminologies": [
+    {
+      "term": "learn",
+      "normalized_term": "learn",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 21,
+      "confidence": 1.0,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word",
+      "normalized_term": "word",
+      "translation_ar": null,
+      "definition": "a common preprocessing step in text analysis",
+      "aliases": [],
+      "frequency": 22,
+      "confidence": 0.9789,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "model",
+      "normalized_term": "model",
+      "translation_ar": null,
+      "definition": "a probabilistic model that assigns probabilities to sequences of words",
+      "aliases": [],
+      "frequency": 28,
+      "confidence": 0.9763,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "attention",
+      "normalized_term": "attention",
+      "translation_ar": null,
+      "definition": "a technique that allows neural networks to focus on relevant parts of the input sequence",
+      "aliases": [],
+      "frequency": 13,
+      "confidence": 0.8484,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine learning",
+      "normalized_term": "machine learning",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 16,
+      "confidence": 0.8337,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "language",
+      "normalized_term": "language",
+      "translation_ar": null,
+      "definition": "a probabilistic model that assigns probabilities to sequences of words",
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 15,
+      "confidence": 0.7816,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "datum",
+      "normalized_term": "datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 15,
+      "confidence": 0.7143,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "natural language processing",
+      "normalized_term": "natural language processing",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 12,
+      "confidence": 0.6928,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "sequence",
+      "normalized_term": "sequence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 13,
+      "confidence": 0.673,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "type",
+      "normalized_term": "type",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 10,
+      "confidence": 0.6118,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "text",
+      "normalized_term": "text",
+      "translation_ar": null,
+      "definition": "a critical step in any natural language processing pipeline",
+      "aliases": [],
+      "frequency": 11,
+      "confidence": 0.5732,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "neural network",
+      "normalized_term": "neural network",
+      "translation_ar": null,
+      "definition": "a computational model inspired by the structure and function of biological neural networks",
+      "aliases": [
+        "CNN"
+      ],
+      "frequency": 16,
+      "confidence": 0.5506,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine",
+      "normalized_term": "machine",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 11,
+      "confidence": 0.5238,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "information",
+      "normalized_term": "information",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 8,
+      "confidence": 0.5221,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "technique",
+      "normalized_term": "technique",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 11,
+      "confidence": 0.5196,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learning be",
+      "normalized_term": "learning be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 8,
+      "confidence": 0.4618,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "computer",
+      "normalized_term": "computer",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4601,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "human language",
+      "normalized_term": "human language",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4601,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tokens",
+      "normalized_term": "tokens",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4601,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "transformer",
+      "normalized_term": "transformer",
+      "translation_ar": null,
+      "definition": "a neural network architecture that relies entirely on attention mechanisms",
+      "aliases": [],
+      "frequency": 10,
+      "confidence": 0.4601,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "process",
+      "normalized_term": "process",
+      "translation_ar": null,
+      "definition": "a critical step in any natural language processing pipeline",
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 17,
+      "confidence": 0.4478,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "regularization",
+      "normalized_term": "regularization",
+      "translation_ar": null,
+      "definition": "a technique used to prevent overfitting by adding a penalty term to the loss function",
+      "aliases": [],
+      "frequency": 5,
+      "confidence": 0.4288,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "deep learning",
+      "normalized_term": "deep learning",
+      "translation_ar": null,
+      "definition": "a subset of machine learning that uses neural networks with many layers",
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4215,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "speech",
+      "normalized_term": "speech",
+      "translation_ar": null,
+      "definition": "the process of assigning a grammatical category to each token in a sentence",
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4215,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "function",
+      "normalized_term": "function",
+      "translation_ar": null,
+      "definition": "a mathematical function applied to the output of each neuron",
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4215,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "attention mechanism",
+      "normalized_term": "attention mechanism",
+      "translation_ar": null,
+      "definition": "a technique that allows neural networks to focus on relevant parts of the input sequence",
+      "aliases": [],
+      "frequency": 8,
+      "confidence": 0.4215,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "input sequence",
+      "normalized_term": "input sequence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.4215,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "natural language",
+      "normalized_term": "natural language",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 7,
+      "confidence": 0.4041,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "language processing",
+      "normalized_term": "language processing",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 7,
+      "confidence": 0.4041,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "network",
+      "normalized_term": "network",
+      "translation_ar": null,
+      "definition": "a computational model inspired by the structure and function of biological neural networks",
+      "aliases": [
+        "CNN"
+      ],
+      "frequency": 13,
+      "confidence": 0.3832,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "task",
+      "normalized_term": "task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 8,
+      "confidence": 0.3671,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "input",
+      "normalized_term": "input",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.3671,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "text preprocessing",
+      "normalized_term": "text preprocessing",
+      "translation_ar": null,
+      "definition": "a critical step in any natural language processing pipeline",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "lemmatization",
+      "normalized_term": "lemmatization",
+      "translation_ar": null,
+      "definition": "a more sophisticated approach than stemming",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "unsupervised learning",
+      "normalized_term": "unsupervised learning",
+      "translation_ar": null,
+      "definition": "a type of machine learning that deals with unlabeled data",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "reinforcement learning",
+      "normalized_term": "reinforcement learning",
+      "translation_ar": null,
+      "definition": "a type of machine learning where an agent learns to make decisions by performing actions in an environment",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "activation function",
+      "normalized_term": "activation function",
+      "translation_ar": null,
+      "definition": "a mathematical function applied to the output of each neuron",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "validation",
+      "normalized_term": "validation",
+      "translation_ar": null,
+      "definition": "a statistical technique used to evaluate the performance of a machine learning model",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "context representation",
+      "normalized_term": "context representation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "positional encoding",
+      "normalized_term": "positional encoding",
+      "translation_ar": null,
+      "definition": "a technique used in transformers to inject information about the position of tokens in a sequence",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "bert",
+      "normalized_term": "bert",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "transfer learning",
+      "normalized_term": "transfer learning",
+      "translation_ar": null,
+      "definition": "a technique where a model trained on one task is reused as the starting point for a model on a different task",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word embedding",
+      "normalized_term": "word embedding",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.343,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "artificial intelligence",
+      "normalized_term": "artificial intelligence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "goal",
+      "normalized_term": "goal",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "supervised learning",
+      "normalized_term": "supervised learning",
+      "translation_ar": null,
+      "definition": "a type of machine learning where the model is trained on labeled data",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "speech recognition",
+      "normalized_term": "speech recognition",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "training datum",
+      "normalized_term": "training datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "encoder",
+      "normalized_term": "encoder",
+      "translation_ar": null,
+      "definition": "a common design pattern in sequence-to-sequence models",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.3067,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a type",
+      "normalized_term": "a type",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 5,
+      "confidence": 0.3059,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "type of",
+      "normalized_term": "type of",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 5,
+      "confidence": 0.3059,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the model",
+      "normalized_term": "the model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 5,
+      "confidence": 0.3059,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "recognition",
+      "normalized_term": "recognition",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NER"
+      ],
+      "frequency": 4,
+      "confidence": 0.281,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "output",
+      "normalized_term": "output",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.281,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "layer",
+      "normalized_term": "layer",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.281,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the process",
+      "normalized_term": "the process",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.261,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "process of",
+      "normalized_term": "process of",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.261,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of machine",
+      "normalized_term": "of machine",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.261,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of machine learning",
+      "normalized_term": "of machine learning",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.261,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a technique",
+      "normalized_term": "a technique",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.261,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tokenization",
+      "normalized_term": "tokenization",
+      "translation_ar": null,
+      "definition": "the process of breaking down text into smaller units called tokens",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tag",
+      "normalized_term": "tag",
+      "translation_ar": null,
+      "definition": "the process of assigning a grammatical category to each token in a sentence",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "activation",
+      "normalized_term": "activation",
+      "translation_ar": null,
+      "definition": "a mathematical function applied to the output of each neuron",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "bias",
+      "normalized_term": "bias",
+      "translation_ar": null,
+      "definition": "the error introduced by approximating a complex problem with a simple model",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "variance",
+      "normalized_term": "variance",
+      "translation_ar": null,
+      "definition": "the sensitivity of the model to fluctuations in the training data",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "self attention",
+      "normalized_term": "self attention",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "decoder",
+      "normalized_term": "decoder",
+      "translation_ar": null,
+      "definition": "a common design pattern in sequence-to-sequence models",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2573,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "sentence",
+      "normalized_term": "sentence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "preprocesse",
+      "normalized_term": "preprocesse",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "concept",
+      "normalized_term": "concept",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a model",
+      "normalized_term": "a model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the attention",
+      "normalized_term": "the attention",
+      "translation_ar": null,
+      "definition": "a technique that allows neural networks to focus on relevant parts of the input sequence",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine translation",
+      "normalized_term": "machine translation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the attention mechanism",
+      "normalized_term": "the attention mechanism",
+      "translation_ar": null,
+      "definition": "a technique that allows neural networks to focus on relevant parts of the input sequence",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "self",
+      "normalized_term": "self",
+      "translation_ar": null,
+      "definition": "a variant of the attention mechanism where the input sequence attends to itself",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "language model",
+      "normalized_term": "language model",
+      "translation_ar": null,
+      "definition": "a probabilistic model that assigns probabilities to sequences of words",
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.2301,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "analysis",
+      "normalized_term": "analysis",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "example",
+      "normalized_term": "example",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 5,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "type of machine",
+      "normalized_term": "type of machine",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learning be a type",
+      "normalized_term": "learning be a type",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a type of machine",
+      "normalized_term": "a type of machine",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "type of machine learning",
+      "normalized_term": "type of machine learning",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learning be a type of",
+      "normalized_term": "learning be a type of",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "be a type of machine",
+      "normalized_term": "be a type of machine",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a type of machine learning",
+      "normalized_term": "a type of machine learning",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "technique use",
+      "normalized_term": "technique use",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "model to",
+      "normalized_term": "model to",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "mechanism",
+      "normalized_term": "mechanism",
+      "translation_ar": null,
+      "definition": "a technique that allows neural networks to focus on relevant parts of the input sequence",
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the input",
+      "normalized_term": "the input",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the input sequence",
+      "normalized_term": "the input sequence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "attention be",
+      "normalized_term": "attention be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "representation",
+      "normalized_term": "representation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 6,
+      "confidence": 0.2108,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "form",
+      "normalized_term": "form",
+      "translation_ar": null,
+      "definition": "a neural network architecture that relies entirely on attention mechanisms",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1827,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "train",
+      "normalized_term": "train",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 3,
+      "confidence": 0.1732,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "nlp",
+      "normalized_term": "nlp",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "subfield",
+      "normalized_term": "subfield",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "interaction",
+      "normalized_term": "interaction",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "meaningful way",
+      "normalized_term": "meaningful way",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "computational linguistic",
+      "normalized_term": "computational linguistic",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "deep learning model",
+      "normalized_term": "deep learning model",
+      "translation_ar": null,
+      "definition": "a subset of machine learning that uses neural networks with many layers",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "approach",
+      "normalized_term": "approach",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "voice datum",
+      "normalized_term": "voice datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "small unit",
+      "normalized_term": "small unit",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "subword",
+      "normalized_term": "subword",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "character",
+      "normalized_term": "character",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tokenization strategy",
+      "normalized_term": "tokenization strategy",
+      "translation_ar": null,
+      "definition": "the process of breaking down text into smaller units called tokens",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "grammatical category",
+      "normalized_term": "grammatical category",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common category",
+      "normalized_term": "common category",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "noun",
+      "normalized_term": "noun",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "verbs",
+      "normalized_term": "verbs",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "adjective",
+      "normalized_term": "adjective",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "adverb",
+      "normalized_term": "adverb",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "pos tagging",
+      "normalized_term": "pos tagging",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of speech",
+      "normalized_term": "of speech",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "speech tagging",
+      "normalized_term": "speech tagging",
+      "translation_ar": null,
+      "definition": "the process of assigning a grammatical category to each token in a sentence",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tagging be",
+      "normalized_term": "tagging be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of speech tagging",
+      "normalized_term": "of speech tagging",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "speech tagging be",
+      "normalized_term": "speech tagging be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "part of speech tagging",
+      "normalized_term": "part of speech tagging",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of speech tagging be",
+      "normalized_term": "of speech tagging be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "part of speech tagging be",
+      "normalized_term": "part of speech tagging be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "raw text datum",
+      "normalized_term": "raw text datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "further analysis",
+      "normalized_term": "further analysis",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "critical step",
+      "normalized_term": "critical step",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "natural language processing pipeline",
+      "normalized_term": "natural language processing pipeline",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "their root form",
+      "normalized_term": "their root form",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "suffix",
+      "normalized_term": "suffix",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "stem run",
+      "normalized_term": "stem run",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "more sophisticated approach",
+      "normalized_term": "more sophisticated approach",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "vocabulary and morphological analysis",
+      "normalized_term": "vocabulary and morphological analysis",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "dictionary form",
+      "normalized_term": "dictionary form",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "lemma",
+      "normalized_term": "lemma",
+      "translation_ar": null,
+      "definition": "a more sophisticated approach than stemming",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common word",
+      "normalized_term": "common word",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "little meaningful information",
+      "normalized_term": "little meaningful information",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word removal",
+      "normalized_term": "word removal",
+      "translation_ar": null,
+      "definition": "a common preprocessing step in text analysis",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common preprocessing step",
+      "normalized_term": "common preprocessing step",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "text analysis",
+      "normalized_term": "text analysis",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "entity recognition",
+      "normalized_term": "entity recognition",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NER"
+      ],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "entity",
+      "normalized_term": "entity",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NER"
+      ],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "predefine category",
+      "normalized_term": "predefine category",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "person name",
+      "normalized_term": "person name",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "organization",
+      "normalized_term": "organization",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "location",
+      "normalized_term": "location",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "date",
+      "normalized_term": "date",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "branch",
+      "normalized_term": "branch",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "system",
+      "normalized_term": "system",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "experience",
+      "normalized_term": "experience",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "development",
+      "normalized_term": "development",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "algorithm",
+      "normalized_term": "algorithm",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "train example",
+      "normalized_term": "train example",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "desire output",
+      "normalized_term": "desire output",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "unlabeled datum",
+      "normalized_term": "unlabeled datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "hide pattern",
+      "normalized_term": "hide pattern",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "intrinsic structure",
+      "normalized_term": "intrinsic structure",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "unsupervised learning be",
+      "normalized_term": "unsupervised learning be",
+      "translation_ar": null,
+      "definition": "a type of machine learning where the model is trained on labeled data",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "agent",
+      "normalized_term": "agent",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "decision",
+      "normalized_term": "decision",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "action",
+      "normalized_term": "action",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "environment",
+      "normalized_term": "environment",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "reward signal",
+      "normalized_term": "reward signal",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "reinforcement",
+      "normalized_term": "reinforcement",
+      "translation_ar": null,
+      "definition": "a type of machine learning where an agent learns to make decisions by performing actions in an environment",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "reinforcement learning be",
+      "normalized_term": "reinforcement learning be",
+      "translation_ar": null,
+      "definition": "a type of machine learning where an agent learns to make decisions by performing actions in an environment",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "computational model",
+      "normalized_term": "computational model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "biological neural network",
+      "normalized_term": "biological neural network",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "interconnect node",
+      "normalized_term": "interconnect node",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "neuron",
+      "normalized_term": "neuron",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "subset",
+      "normalized_term": "subset",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "many layer",
+      "normalized_term": "many layer",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "remarkable result",
+      "normalized_term": "remarkable result",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "image recognition",
+      "normalized_term": "image recognition",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "convolutional neural network",
+      "normalized_term": "convolutional neural network",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "CNN"
+      ],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "cnn",
+      "normalized_term": "cnn",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "image processing",
+      "normalized_term": "image processing",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "convolutional layer",
+      "normalized_term": "convolutional layer",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "spatial feature",
+      "normalized_term": "spatial feature",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "input datum",
+      "normalized_term": "input datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "recurrent neural network",
+      "normalized_term": "recurrent neural network",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "RNN"
+      ],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "rnn",
+      "normalized_term": "rnn",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "sequential datum processing",
+      "normalized_term": "sequential datum processing",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "hide state",
+      "normalized_term": "hide state",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "previous time step",
+      "normalized_term": "previous time step",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "mathematical function",
+      "normalized_term": "mathematical function",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common activation function",
+      "normalized_term": "common activation function",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "relu",
+      "normalized_term": "relu",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "sigmoid",
+      "normalized_term": "sigmoid",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tanh",
+      "normalized_term": "tanh",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "linearity",
+      "normalized_term": "linearity",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the activation",
+      "normalized_term": "the activation",
+      "translation_ar": null,
+      "definition": "a mathematical function applied to the output of each neuron",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the activation function",
+      "normalized_term": "the activation function",
+      "translation_ar": null,
+      "definition": "a mathematical function applied to the output of each neuron",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "statistical technique",
+      "normalized_term": "statistical technique",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "performance",
+      "normalized_term": "performance",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine learning model",
+      "normalized_term": "machine learning model",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "cross validation",
+      "normalized_term": "cross validation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "noise",
+      "normalized_term": "noise",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "outlier",
+      "normalized_term": "outlier",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "poor generalization",
+      "normalized_term": "poor generalization",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "unseen datum",
+      "normalized_term": "unseen datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "fundamental concept",
+      "normalized_term": "fundamental concept",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "error",
+      "normalized_term": "error",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "complex problem",
+      "normalized_term": "complex problem",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "simple model",
+      "normalized_term": "simple model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "sensitivity",
+      "normalized_term": "sensitivity",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "fluctuation",
+      "normalized_term": "fluctuation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "penalty term",
+      "normalized_term": "penalty term",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "loss function",
+      "normalized_term": "loss function",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common regularization method",
+      "normalized_term": "common regularization method",
+      "translation_ar": null,
+      "definition": "a technique used to prevent overfitting by adding a penalty term to the loss function",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "relevant part",
+      "normalized_term": "relevant part",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine translation task",
+      "normalized_term": "machine translation task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "variant",
+      "normalized_term": "variant",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "attention score",
+      "normalized_term": "attention score",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "pair",
+      "normalized_term": "pair",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "position",
+      "normalized_term": "position",
+      "translation_ar": null,
+      "definition": "a technique used in transformers to inject information about the position of tokens in a sequence",
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "multi head attention",
+      "normalized_term": "multi head attention",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 4,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "extension",
+      "normalized_term": "extension",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "multiple attention operation",
+      "normalized_term": "multiple attention operation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "parallel",
+      "normalized_term": "parallel",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "different representation subspace",
+      "normalized_term": "different representation subspace",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "head attention",
+      "normalized_term": "head attention",
+      "translation_ar": null,
+      "definition": "an extension of self-attention that runs multiple attention operations in parallel",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "neural network architecture",
+      "normalized_term": "neural network architecture",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "paper",
+      "normalized_term": "paper",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "foundation",
+      "normalized_term": "foundation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "modern language model",
+      "normalized_term": "modern language model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the transformer",
+      "normalized_term": "the transformer",
+      "translation_ar": null,
+      "definition": "a neural network architecture that relies entirely on attention mechanisms",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "common design pattern",
+      "normalized_term": "common design pattern",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "output sequence",
+      "normalized_term": "output sequence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "context",
+      "normalized_term": "context",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the encoder",
+      "normalized_term": "the encoder",
+      "translation_ar": null,
+      "definition": "a common design pattern in sequence-to-sequence models",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "recurrence",
+      "normalized_term": "recurrence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "necessary order information",
+      "normalized_term": "necessary order information",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "encode",
+      "normalized_term": "encode",
+      "translation_ar": null,
+      "definition": "a common design pattern in sequence-to-sequence models",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "probabilistic model",
+      "normalized_term": "probabilistic model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "probability",
+      "normalized_term": "probability",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "many natural language processing task",
+      "normalized_term": "many natural language processing task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [
+        "NLP"
+      ],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "text generation",
+      "normalized_term": "text generation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "bidirectional encoder representation",
+      "normalized_term": "bidirectional encoder representation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "google",
+      "normalized_term": "google",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "language modeling",
+      "normalized_term": "language modeling",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "next sentence prediction",
+      "normalized_term": "next sentence prediction",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "one task",
+      "normalized_term": "one task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "starting point",
+      "normalized_term": "starting point",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "different task",
+      "normalized_term": "different task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "transfer",
+      "normalized_term": "transfer",
+      "translation_ar": null,
+      "definition": "a technique where a model trained on one task is reused as the starting point for a model on a different task",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "fine tune",
+      "normalized_term": "fine tune",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "specific downstream task",
+      "normalized_term": "specific downstream task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "its learn representation",
+      "normalized_term": "its learn representation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "target task",
+      "normalized_term": "target task",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "tune",
+      "normalized_term": "tune",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "fine tuning",
+      "normalized_term": "fine tuning",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "dense vector representation",
+      "normalized_term": "dense vector representation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "semantic relationship",
+      "normalized_term": "semantic relationship",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "popular word embed method",
+      "normalized_term": "popular word embed method",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "glove",
+      "normalized_term": "glove",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "fasttext",
+      "normalized_term": "fasttext",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "continuous vector space",
+      "normalized_term": "continuous vector space",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "semantically similar word",
+      "normalized_term": "semantically similar word",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "embedding",
+      "normalized_term": "embedding",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "vector",
+      "normalized_term": "vector",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1715,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "intelligence",
+      "normalized_term": "intelligence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "intelligence that",
+      "normalized_term": "intelligence that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the goal",
+      "normalized_term": "the goal",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "goal of",
+      "normalized_term": "goal of",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "computer to",
+      "normalized_term": "computer to",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "language in",
+      "normalized_term": "language in",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of artificial intelligence",
+      "normalized_term": "of artificial intelligence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "artificial intelligence that",
+      "normalized_term": "artificial intelligence that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "human language in",
+      "normalized_term": "human language in",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of artificial intelligence that",
+      "normalized_term": "of artificial intelligence that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "form of",
+      "normalized_term": "form of",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "text into",
+      "normalized_term": "text into",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "category",
+      "normalized_term": "category",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "What is Natural Language Processing"
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "step in",
+      "normalized_term": "step in",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "stem",
+      "normalized_term": "stem",
+      "translation_ar": null,
+      "definition": "the process of reducing words to their root form by removing suffixes",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word to",
+      "normalized_term": "word to",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "base",
+      "normalized_term": "base",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word be",
+      "normalized_term": "word be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "word that",
+      "normalized_term": "word that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "in text",
+      "normalized_term": "in text",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "label datum",
+      "normalized_term": "label datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learn where",
+      "normalized_term": "learn where",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "model be",
+      "normalized_term": "model be",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine learning where",
+      "normalized_term": "machine learning where",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of machine learning where",
+      "normalized_term": "of machine learning where",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "type of machine learning where",
+      "normalized_term": "type of machine learning where",
+      "translation_ar": null,
+      "definition": "a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learn that",
+      "normalized_term": "learn that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the datum",
+      "normalized_term": "the datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "machine learn that",
+      "normalized_term": "machine learn that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of machine learn that",
+      "normalized_term": "of machine learn that",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Introduction to Machine Learning"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "structure",
+      "normalized_term": "structure",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a neural network",
+      "normalized_term": "a neural network",
+      "translation_ar": null,
+      "definition": "a computational model inspired by the structure and function of biological neural networks",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "image",
+      "normalized_term": "image",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learning have",
+      "normalized_term": "learning have",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "and speech",
+      "normalized_term": "and speech",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "and speech recognition",
+      "normalized_term": "and speech recognition",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "information from",
+      "normalized_term": "information from",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the output",
+      "normalized_term": "the output",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the training",
+      "normalized_term": "the training",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "the training datum",
+      "normalized_term": "the training datum",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "method",
+      "normalized_term": "method",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "method include",
+      "normalized_term": "method include",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "translation",
+      "normalized_term": "translation",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "a sequence",
+      "normalized_term": "a sequence",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "allow the model",
+      "normalized_term": "allow the model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "allow the model to",
+      "normalized_term": "allow the model to",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Attention Mechanism"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "architecture",
+      "normalized_term": "architecture",
+      "translation_ar": null,
+      "definition": "a common design pattern in sequence-to-sequence models",
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "of word",
+      "normalized_term": "of word",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1534,
+      "source_locations": [
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "The Transformer Architecture"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Transformer Models and Attention Mechanisms",
+          "heading": "Pre-trained Language Models"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "set",
+      "normalized_term": "set",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1405,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "step",
+      "normalized_term": "step",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1405,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "learn model",
+      "normalized_term": "learn model",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1405,
+      "source_locations": [
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Neural Networks"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Machine Learning Fundamentals",
+          "heading": "Model Evaluation"
+        }
+      ],
+      "embedding": []
+    },
+    {
+      "term": "ner",
+      "normalized_term": "ner",
+      "translation_ar": null,
+      "definition": null,
+      "aliases": [],
+      "frequency": 2,
+      "confidence": 0.1155,
+      "source_locations": [
+        {
+          "chapter_id": 1,
+          "chapter_title": "Introduction to Natural Language Processing",
+          "heading": "Text Preprocessing"
+        }
+      ],
+      "embedding": []
+    }
+  ]
+}
