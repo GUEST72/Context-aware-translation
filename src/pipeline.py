@@ -15,7 +15,7 @@ Orchestrates:
 
 import logging
 import time
-from typing import Optional
+from typing import List, Optional
 
 from src.text_loader import BookLoader
 from src.term_extractor import TermExtractor
@@ -26,6 +26,7 @@ from src.context_extractor import ContextExtractor
 from src.definition_extractor import DefinitionExtractor
 from src.translator import Translator
 from src.embedding_generator import EmbeddingGenerator
+from src.lazy_embedding_cache import LazyEmbeddingCache
 from src.terminology_memory import TerminologyMemory, TerminologyEntry
 
 logger = logging.getLogger(__name__)
@@ -44,15 +45,18 @@ class PipelineConfig:
         enable_embeddings: bool = True,
         include_embeddings_in_output: bool = True,
         embedding_model: str = "all-MiniLM-L6-v2",
+        lazy_embeddings: bool = False,
     ):
         self.input_path = input_path
         self.output_path = output_path
         self.min_term_freq = min_term_freq
         self.max_term_tokens = max_term_tokens
         self.enable_translation = enable_translation
-        self.enable_embeddings = enable_embeddings
+        # In lazy mode, skip embeddings during pipeline (they're done on-demand later)
+        self.enable_embeddings = enable_embeddings and not lazy_embeddings
         self.include_embeddings_in_output = include_embeddings_in_output
         self.embedding_model = embedding_model
+        self.lazy_embeddings = lazy_embeddings
 
 
 class Pipeline:
@@ -213,3 +217,40 @@ class Pipeline:
                      f"{len(self.memory)} terms stored.")
         logger.info("=" * 60)
         return self.memory
+
+    def embed_terms_lazy(self, terms: Optional[List[str]] = None, cache_path: str = "data/embedding_cache.json") -> LazyEmbeddingCache:
+        """
+        Embed terminology terms on-demand using lazy cache.
+
+        This method is called AFTER pipeline completes. Embeddings are stored in a separate
+        cache file, not in the main terminology_memory.json, keeping extraction fast.
+
+        Args:
+            terms: List of terms to embed. If None, embeds all terms in memory.
+            cache_path: Path to store embedding cache.
+
+        Returns:
+            LazyEmbeddingCache instance with populated embeddings.
+        """
+        if not self.memory:
+            logger.warning("No terminology memory loaded; cannot embed. Run pipeline first.")
+            return LazyEmbeddingCache(cache_path, self.config.embedding_model)
+
+        cache = LazyEmbeddingCache(cache_path, self.config.embedding_model)
+
+        if terms is None:
+            terms = list(self.memory.entries.keys())
+
+        logger.info(f"[LAZY] Embedding {len(terms)} terms on-demand …")
+        
+        # Use batch embedding for efficiency
+        embeddings = cache.batch_embed(terms)
+        
+        cached_count = sum(1 for emb in embeddings.values() if emb is not None)
+        logger.info(f"[LAZY] Computed/cached {cached_count} embeddings.")
+        
+        # Persist cache to disk
+        cache.persist()
+        logger.info(f"[LAZY] Embedding cache saved to {cache_path} ({len(embeddings)} entries).")
+        
+        return cache

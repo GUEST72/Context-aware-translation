@@ -70,6 +70,11 @@ def parse_args() -> argparse.Namespace:
         help="Disable embedding generation.",
     )
     parser.add_argument(
+        "--lazy-embed",
+        action="store_true",
+        help="Enable lazy embedding (compute & cache on-demand after extraction, not during pipeline).",
+    )
+    parser.add_argument(
         "--no-include-embeddings",
         action="store_true",
         help="Exclude embedding vectors from the output JSON (they are included by default).",
@@ -103,10 +108,23 @@ def main() -> None:
         enable_embeddings=not args.no_embed,
         include_embeddings_in_output=not args.no_include_embeddings,
         embedding_model=args.embedding_model,
+        lazy_embeddings=args.lazy_embed,
     )
 
     pipeline = Pipeline(config)
     memory = pipeline.run()
+
+    # If lazy embeddings enabled, compute them after pipeline completes
+    if args.lazy_embed:
+        print("\n" + "=" * 60)
+        print("  LAZY EMBEDDING PHASE")
+        print("=" * 60)
+        embedding_cache = pipeline.embed_terms_lazy(cache_path="data/embedding_cache.json")
+        stats = embedding_cache.get_stats()
+        print(f"  Embeddings cached: {stats['in_memory_entries']} entries")
+        print(f"  Cache persisted: {stats['cache_file_exists']}")
+        print("=" * 60)
+        print()
 
     # Print summary
     print("\n" + "=" * 60)
