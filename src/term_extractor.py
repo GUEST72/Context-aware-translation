@@ -87,8 +87,9 @@ class TermExtractor:
         Returns the merged candidate dictionary.
         """
         logger.info("Starting candidate term extraction …")
-        for seg in segments:
+        for seg_idx, seg in enumerate(segments):
             source = seg.to_dict()
+            source["segment_index"] = seg_idx
             doc = nlp(seg.text)
 
             # Method 1: noun-phrase chunks

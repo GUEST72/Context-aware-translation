@@ -167,13 +167,19 @@ class Pipeline:
             aliases = alias_detector.get_aliases(canonical)
             translation = translator.translate_term(canonical)
             embedding = embeddings.get(canonical, [])
-            example_sentences = context_extractor.extract_examples(
+            example_data = context_extractor.extract_examples(
                 canonical_term=canonical,
                 surface_forms=info.get("surface_forms", []),
                 source_locations=info.get("source_locations", []),
                 segments=segments,
                 max_examples=2,
             )
+            example_sentences = example_data.get("example_sentences", [])
+            primary_example_sentence = example_data.get("primary_example_sentence")
+            supporting_example_sentences = example_data.get(
+                "supporting_example_sentences", []
+            )
+            example_score_breakdown = example_data.get("example_score_breakdown", {})
             surface_form_variants = info.get("surface_form_variants", [])
 
             entry = TerminologyEntry(
@@ -187,6 +193,9 @@ class Pipeline:
                 source_locations=info["source_locations"],
                 embedding=embedding,
                 example_sentences=example_sentences,
+                primary_example_sentence=primary_example_sentence,
+                supporting_example_sentences=supporting_example_sentences,
+                example_score_breakdown=example_score_breakdown,
                 surface_form_variants=surface_form_variants,
             )
             self.memory.add_entry(entry)

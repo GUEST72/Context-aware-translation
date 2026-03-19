@@ -15,38 +15,74 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.1 What is Machine Learning",
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.3 Model Evaluation",
+          "page_number": 2,
+          "segment_index": 5
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+        "The ability to generalize beyond the training data is a key challenge."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "The ability to generalize beyond the training data is a key challenge."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5413,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "datum",
+          "data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "data",
@@ -68,20 +104,39 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Tokenization is the process of splitting text into smaller units called tokens.",
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
       ],
+      "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
+      "supporting_example_sentences": [
+        "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0217,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7054,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "tokens",
+          "tokens"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "tokens",
@@ -103,20 +158,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.3 Model Evaluation",
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+        "The ability to generalize beyond the training data is a key challenge.",
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.026,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5383,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "training datum",
+          "training data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "training data",
@@ -138,20 +219,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.04,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3886,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "application",
+          "applications"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "applications",
@@ -173,38 +273,82 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.2 Transformer Models",
+          "page_number": 6,
+          "segment_index": 14
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.3 Model Evaluation",
+          "page_number": 2,
+          "segment_index": 5
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.1 Neural Networks",
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "It focuses on building models that generalize from examples.",
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.6667,
+        "semantic_similarity_score": 0.0216,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5992,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "model",
+          "models",
+          "model"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "model",
@@ -231,26 +375,53 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.2 Transformer Models",
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
-        "Each neuron applies a transformation to its input and passes the result to the next layer."
+        "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0234,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5149,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "input",
+          "input"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "input",
@@ -272,26 +443,53 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0324,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6998,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "language",
+          "language"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "language",
@@ -313,20 +511,46 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1075,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7186,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "natural language processing",
+          "natural language processing"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "natural language processing",
@@ -348,13 +572,47 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.2 Text Preprocessing",
+          "page_number": 4,
+          "segment_index": 9
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.2 Text Preprocessing",
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+      "supporting_example_sentences": [
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0658,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.7647,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6711,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "word",
+          "words",
+          "word"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "words",
@@ -381,32 +639,60 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.1 What is Machine Learning",
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+        "Deep learning refers to neural networks with multiple hidden layers."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "Deep learning refers to neural networks with multiple hidden layers."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0355,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7002,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "learn",
+          "learning"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "learning",
@@ -428,20 +714,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0735,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7101,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "artificial intelligence",
+          "artificial intelligence"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "artificial intelligence",
@@ -463,13 +768,15 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
@@ -477,6 +784,23 @@
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
         "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5413,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "pattern",
+          "patterns"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "patterns",
@@ -498,20 +822,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The ability to generalize beyond the training data is a key challenge.",
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0323,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6899,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "ability",
+          "ability"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "ability",
@@ -533,20 +876,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.1 What is Machine Learning",
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5413,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "system",
+          "systems"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "systems",
@@ -568,19 +937,22 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
@@ -588,6 +960,23 @@
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0186,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6959,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "performance",
+          "performance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "performance",
@@ -609,20 +998,46 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0672,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7085,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "natural language",
+          "natural language"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "natural language",
@@ -644,13 +1059,32 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Tokenization is the process of splitting text into smaller units called tokens.",
+        "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
       ],
+      "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
+      "supporting_example_sentences": [
+        "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0234,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7058,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "tokenization",
+          "tokenization"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "tokenization",
@@ -672,13 +1106,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.1 What is Machine Learning",
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0625,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7069,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "machine learning",
+          "machine learning"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "machine learning",
@@ -700,20 +1160,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The ability to generalize beyond the training data is a key challenge.",
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0853,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7031,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "ability to",
+          "ability to"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "ability to",
@@ -735,13 +1214,32 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
+        "Common supervised learning tasks include classification and regression.",
         "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "supporting_example_sentences": [
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0872,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.875,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.523,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "supervised learning",
+          "supervised learning"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "supervised learning",
@@ -763,13 +1261,39 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.1 Neural Networks",
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
+        "Deep learning refers to neural networks with multiple hidden layers.",
         "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
       ],
+      "primary_example_sentence": "Deep learning refers to neural networks with multiple hidden layers.",
+      "supporting_example_sentences": [
+        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.8,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.57,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "layer",
+          "layers"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "layers",
@@ -791,26 +1315,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0129,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5445,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "datum and",
+          "data and"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "data and",
@@ -832,26 +1376,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Common supervised learning tasks include classification and regression.",
-        "Clustering and dimensionality reduction are typical unsupervised learning tasks."
+        "This helps improve the performance of downstream natural language processing tasks.",
+        "Common supervised learning tasks include classification and regression."
       ],
+      "primary_example_sentence": "This helps improve the performance of downstream natural language processing tasks.",
+      "supporting_example_sentences": [
+        "Common supervised learning tasks include classification and regression."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3591,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "task",
+          "tasks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "tasks",
@@ -873,20 +1437,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.3 Model Evaluation",
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0186,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6401,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "a model",
+          "a model"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "a model",
@@ -908,20 +1498,54 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.2 Text Preprocessing",
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Tokenization is the process of splitting text into smaller units called tokens.",
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
+      "supporting_example_sentences": [
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.6667,
+        "semantic_similarity_score": 0.038,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6095,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "process",
+          "processing",
+          "process"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "processing",
@@ -948,20 +1572,46 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0768,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7109,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "language processing",
+          "language processing"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "language processing",
@@ -983,20 +1633,54 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.1 What is Machine Learning",
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "It enables machines to process and analyze large amounts of natural language data."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.6667,
+        "semantic_similarity_score": 0.0217,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5967,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "machine",
+          "machine",
+          "machines"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "machine",
@@ -1023,20 +1707,46 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
+        },
+        {
+          "chapter_id": 1,
+          "chapter_title": "Chapter 1 Introduction to Machine Learning",
+          "heading": "1.3 Model Evaluation",
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+        "The ability to generalize beyond the training data is a key challenge.",
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5318,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "train",
+          "training"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "training",
@@ -1058,13 +1768,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0269,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.698,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "branch",
+          "branch"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "branch",
@@ -1086,13 +1812,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0773,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6087,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7106,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "their performance",
+          "their performance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "their performance",
@@ -1114,13 +1856,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         }
       ],
       "embedding": [],
       "example_sentences": [
         "It focuses on building models that generalize from examples."
       ],
+      "primary_example_sentence": "It focuses on building models that generalize from examples.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0411,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5556,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3136,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "building model",
+          "building models"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "building models",
@@ -1142,13 +1900,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         }
       ],
       "embedding": [],
       "example_sentences": [
         "It focuses on building models that generalize from examples."
       ],
+      "primary_example_sentence": "It focuses on building models that generalize from examples.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5556,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3033,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "example",
+          "examples"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "examples",
@@ -1170,13 +1944,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0286,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3603,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "practical application",
+          "practical applications"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "practical applications",
@@ -1198,13 +1988,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0831,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3739,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "machine learning algorithm",
+          "machine learning algorithms"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "machine learning algorithms",
@@ -1226,13 +2032,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0286,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3603,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "recommendation system",
+          "recommendation systems"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "recommendation systems",
@@ -1254,13 +2076,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0899,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5256,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "fraud detection",
+          "fraud detection"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "fraud detection",
@@ -1282,13 +2120,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics."
       ],
+      "primary_example_sentence": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0286,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3603,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "predictive analytic",
+          "predictive analytics"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "predictive analytics",
@@ -1310,13 +2164,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+        "The ability to generalize beyond the training data is a key challenge."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1086,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.709,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "key challenge",
+          "key challenge"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "key challenge",
@@ -1338,13 +2208,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0301,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3607,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "correspond output",
+          "corresponding output"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "corresponding output",
@@ -1366,13 +2252,32 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Common supervised learning tasks include classification and regression."
+        "Common supervised learning tasks include classification and regression.",
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "supporting_example_sentences": [
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.1674,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.875,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3931,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "common supervised learning task",
+          "common supervised learning tasks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "common supervised learning tasks",
@@ -1394,13 +2299,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Common supervised learning tasks include classification and regression."
       ],
+      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0487,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.875,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.5134,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "classification",
+          "classification"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "classification",
@@ -1422,13 +2343,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Common supervised learning tasks include classification and regression."
       ],
+      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0487,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.875,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.5134,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "regression",
+          "regression"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "regression",
@@ -1450,13 +2387,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
+      "primary_example_sentence": "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.016,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6471,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3511,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "unsupervised learn deal",
+          "unsupervised learning deals"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "unsupervised learning deals",
@@ -1478,13 +2431,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
+      "primary_example_sentence": "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0284,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6471,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3542,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "unlabeled datum",
+          "unlabeled data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "unlabeled data",
@@ -1506,13 +2475,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
+      "primary_example_sentence": "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6471,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3471,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "hide structure",
+          "hidden structures"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "hidden structures",
@@ -1534,13 +2519,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Clustering and dimensionality reduction are typical unsupervised learning tasks."
       ],
+      "primary_example_sentence": "Clustering and dimensionality reduction are typical unsupervised learning tasks.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.29,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7778,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.5592,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "clustering and dimensionality reduction",
+          "clustering and dimensionality reduction"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "clustering and dimensionality reduction",
@@ -1562,13 +2563,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Clustering and dimensionality reduction are typical unsupervised learning tasks."
       ],
+      "primary_example_sentence": "Clustering and dimensionality reduction are typical unsupervised learning tasks.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.1575,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7778,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.376,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "typical unsupervised learning task",
+          "typical unsupervised learning tasks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "typical unsupervised learning tasks",
@@ -1590,13 +2607,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0268,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6421,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "noise",
+          "noise"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "noise",
@@ -1618,13 +2651,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4855,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "outlier",
+          "outliers"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "outliers",
@@ -1646,13 +2695,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.077,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6547,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "its performance",
+          "its performance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "its performance",
@@ -1674,13 +2739,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0245,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4916,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "unseen datum",
+          "unseen data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "unseen data",
@@ -1702,13 +2783,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Regularization techniques are often used to mitigate overfitting."
       ],
+      "primary_example_sentence": "Regularization techniques are often used to mitigate overfitting.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0433,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3058,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "regularization technique",
+          "regularization techniques"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "regularization techniques",
@@ -1730,13 +2827,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0247,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.619,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.499,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "balance",
+          "balance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "balance",
@@ -1758,13 +2871,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.0,
+        "semantic_similarity_score": 0.0957,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.619,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.2168,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "model 's ability",
+          "model 's ability"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "model 's ability",
@@ -1786,13 +2915,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0957,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.619,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5168,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "its ability",
+          "its ability"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "its ability",
@@ -1814,13 +2959,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0226,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.619,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3485,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "new datum",
+          "new data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "new data",
@@ -1842,13 +3003,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "High bias leads to underfitting, while high variance leads to overfitting."
       ],
+      "primary_example_sentence": "High bias leads to underfitting, while high variance leads to overfitting.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1251,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5404,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "high bias",
+          "high bias"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "high bias",
@@ -1870,13 +3047,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "High bias leads to underfitting, while high variance leads to overfitting."
       ],
+      "primary_example_sentence": "High bias leads to underfitting, while high variance leads to overfitting.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1251,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5404,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "high variance",
+          "high variance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "high variance",
@@ -1898,13 +3091,32 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "High bias leads to underfitting, while high variance leads to overfitting.",
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "High bias leads to underfitting, while high variance leads to overfitting.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0212,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5144,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "bias",
+          "bias"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "bias",
@@ -1926,13 +3138,32 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "High bias leads to underfitting, while high variance leads to overfitting.",
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "High bias leads to underfitting, while high variance leads to overfitting.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0212,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5144,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "variance",
+          "variance"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "variance",
@@ -1954,13 +3185,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0309,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6994,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "subfield",
+          "subfield"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "subfield",
@@ -1982,13 +3229,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0309,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6994,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "interaction",
+          "interaction"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "interaction",
@@ -2010,13 +3273,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5417,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "computer",
+          "computers"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "computers",
@@ -2038,13 +3317,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0968,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7159,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "human language",
+          "human language"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "human language",
@@ -2066,13 +3361,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
         "It enables machines to process and analyze large amounts of natural language data."
       ],
+      "primary_example_sentence": "It enables machines to process and analyze large amounts of natural language data.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0344,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6923,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3624,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "large amount",
+          "large amounts"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "large amounts",
@@ -2094,13 +3405,32 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "It enables machines to process and analyze large amounts of natural language data."
+        "It enables machines to process and analyze large amounts of natural language data.",
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
+      "primary_example_sentence": "It enables machines to process and analyze large amounts of natural language data.",
+      "supporting_example_sentences": [
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0615,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6923,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3692,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "natural language datum",
+          "natural language data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "natural language data",
@@ -2122,13 +3452,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1313,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5614,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "machine translation",
+          "machine translation"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "machine translation",
@@ -2150,13 +3496,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0721,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5466,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "sentiment",
+          "sentiment"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "sentiment",
@@ -2178,13 +3540,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0721,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5466,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "analysis",
+          "analysis"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "analysis",
@@ -2206,13 +3584,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0321,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3866,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "answer system",
+          "answering systems"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "answering systems",
@@ -2234,13 +3628,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "These applications require understanding both syntax and semantics."
       ],
+      "primary_example_sentence": "These applications require understanding both syntax and semantics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1437,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.4997,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "both syntax",
+          "both syntax"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "both syntax",
@@ -2262,13 +3672,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "These applications require understanding both syntax and semantics."
       ],
+      "primary_example_sentence": "These applications require understanding both syntax and semantics.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3137,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "semantic",
+          "semantics"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "semantics",
@@ -2290,13 +3716,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Tokenization is the process of splitting text into smaller units called tokens."
       ],
+      "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0385,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7096,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "text",
+          "text"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "text",
@@ -2318,13 +3760,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Tokenization is the process of splitting text into smaller units called tokens."
       ],
+      "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.55,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "small unit",
+          "smaller units"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "smaller units",
@@ -2346,13 +3804,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
         "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
       ],
+      "primary_example_sentence": "These tokens may represent words, subwords, or characters depending on the tokenization strategy.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6154,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3423,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "subword",
+          "subwords"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "subwords",
@@ -2374,13 +3848,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
         "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
       ],
+      "primary_example_sentence": "These tokens may represent words, subwords, or characters depending on the tokenization strategy.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6154,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3423,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "character",
+          "characters"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "characters",
@@ -2402,13 +3892,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 8
         }
       ],
       "embedding": [],
       "example_sentences": [
         "These tokens may represent words, subwords, or characters depending on the tokenization strategy."
       ],
+      "primary_example_sentence": "These tokens may represent words, subwords, or characters depending on the tokenization strategy.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0932,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6154,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5156,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "tokenization strategy",
+          "tokenization strategy"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "tokenization strategy",
@@ -2430,13 +3936,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
+      "primary_example_sentence": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1199,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.7647,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6847,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "word removal",
+          "word removal"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "word removal",
@@ -2458,13 +3980,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
+      "primary_example_sentence": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0878,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.7647,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5266,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "common word",
+          "common words"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "common words",
@@ -2486,13 +4024,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
+      "primary_example_sentence": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.165,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.7647,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.696,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "little semantic meaning",
+          "little semantic meaning"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "little semantic meaning",
@@ -2514,13 +4068,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 9
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "This helps improve the performance of downstream natural language processing tasks."
       ],
+      "primary_example_sentence": "This helps improve the performance of downstream natural language processing tasks.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.2439,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4201,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "downstream natural language processing task",
+          "downstream natural language processing tasks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "downstream natural language processing tasks",
@@ -2542,13 +4112,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0274,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5068,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "lemmatization",
+          "lemmatization"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "lemmatization",
@@ -2570,13 +4156,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0788,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5197,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "their base",
+          "their base"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "their base",
@@ -2598,13 +4200,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0788,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5197,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "dictionary form",
+          "dictionary form"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "dictionary form",
@@ -2626,13 +4244,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0476,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3619,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "different inflect form",
+          "different inflected forms"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "different inflected forms",
@@ -2654,13 +4288,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0689,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5172,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "single term",
+          "single term"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "single term",
@@ -2682,13 +4332,29 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "This is crucial for accurate term normalization."
       ],
+      "primary_example_sentence": "This is crucial for accurate term normalization.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.2291,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5714,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.513,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "accurate term normalization",
+          "accurate term normalization"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "accurate term normalization",
@@ -2710,13 +4376,32 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.2 Text Preprocessing",
-          "page_number": 4
+          "page_number": 4,
+          "segment_index": 10
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Tokenization is the process of splitting text into smaller units called tokens."
+        "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+        "This is crucial for accurate term normalization."
       ],
+      "primary_example_sentence": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term.",
+      "supporting_example_sentences": [
+        "This is crucial for accurate term normalization."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0167,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5042,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "term",
+          "term"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "term",
@@ -2738,13 +4423,40 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.1 Neural Networks",
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+        "Deep learning refers to neural networks with multiple hidden layers."
       ],
+      "primary_example_sentence": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+      "supporting_example_sentences": [
+        "Deep learning refers to neural networks with multiple hidden layers."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.6667,
+        "semantic_similarity_score": 0.0941,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6173,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "neural network",
+          "neural network",
+          "neural networks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "neural network",
@@ -2771,13 +4483,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
       ],
+      "primary_example_sentence": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0905,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7164,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "computational model",
+          "computational model"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "computational model",
@@ -2799,13 +4527,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
       ],
+      "primary_example_sentence": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5437,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "interconnect node",
+          "interconnected nodes"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "interconnected nodes",
@@ -2827,13 +4571,33 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+        "Each neuron applies a transformation to its input and passes the result to the next layer."
       ],
+      "primary_example_sentence": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons.",
+      "supporting_example_sentences": [
+        "Each neuron applies a transformation to its input and passes the result to the next layer."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.3333,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4938,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "neuron",
+          "neurons",
+          "neuron"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "neurons",
@@ -2860,13 +4624,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Each neuron applies a transformation to its input and passes the result to the next layer."
       ],
+      "primary_example_sentence": "Each neuron applies a transformation to its input and passes the result to the next layer.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.032,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.4667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.478,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "transformation",
+          "transformation"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "transformation",
@@ -2888,13 +4668,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Each neuron applies a transformation to its input and passes the result to the next layer."
       ],
+      "primary_example_sentence": "Each neuron applies a transformation to its input and passes the result to the next layer.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0924,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.4667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4931,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "its input",
+          "its input"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "its input",
@@ -2916,13 +4712,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Each neuron applies a transformation to its input and passes the result to the next layer."
       ],
+      "primary_example_sentence": "Each neuron applies a transformation to its input and passes the result to the next layer.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0924,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.4667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4931,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "next layer",
+          "next layer"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "next layer",
@@ -2944,13 +4756,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "Deep learning refers to neural networks with multiple hidden layers."
       ],
+      "primary_example_sentence": "Deep learning refers to neural networks with multiple hidden layers.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1061,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.8,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7465,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "deep learning",
+          "deep learning"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "deep learning",
@@ -2972,13 +4800,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "Deep learning refers to neural networks with multiple hidden layers."
       ],
+      "primary_example_sentence": "Deep learning refers to neural networks with multiple hidden layers.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0356,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.8,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5789,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "multiple hide layer",
+          "multiple hidden layers"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "multiple hidden layers",
@@ -3000,13 +4844,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains."
       ],
+      "primary_example_sentence": "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0264,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.341,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "complex representation",
+          "complex representations"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "complex representations",
@@ -3028,13 +4888,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains."
       ],
+      "primary_example_sentence": "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0264,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.341,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "many domain",
+          "many domains"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "many domains",
@@ -3056,13 +4932,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
         }
       ],
       "embedding": [],
       "example_sentences": [
         "The transformer architecture relies on self-attention mechanisms to process input sequences."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1108,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5368,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "transformer architecture",
+          "transformer architecture"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "transformer architecture",
@@ -3084,13 +4976,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
         }
       ],
       "embedding": [],
       "example_sentences": [
         "The transformer architecture relies on self-attention mechanisms to process input sequences."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.035,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3678,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "input sequence",
+          "input sequences"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "input sequences",
@@ -3112,13 +5020,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
         }
       ],
       "embedding": [],
       "example_sentences": [
         "It allows models to capture long-range dependencies without relying on recurrent structures."
       ],
+      "primary_example_sentence": "It allows models to capture long-range dependencies without relying on recurrent structures.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0335,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3584,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "recurrent structure",
+          "recurrent structures"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "recurrent structures",
@@ -3140,13 +5064,39 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.2 Transformer Models",
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.0,
+        "semantic_similarity_score": 0.0907,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.2318,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "self attention",
+          "self attention"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "self attention",
@@ -3168,13 +5118,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5789,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3368,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "relationship",
+          "relationships"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "relationships",
@@ -3196,13 +5162,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0257,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5789,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3433,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "relevant part",
+          "relevant parts"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "relevant parts",
@@ -3224,13 +5206,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
       ],
+      "primary_example_sentence": "This mechanism is fundamental to modern language models such as BERT and GPT.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0985,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.5385,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4954,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "modern language model",
+          "modern language models"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "modern language models",
@@ -3252,13 +5250,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
       ],
+      "primary_example_sentence": "This mechanism is fundamental to modern language models such as BERT and GPT.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0362,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.5385,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6298,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "bert",
+          "bert"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "bert",
@@ -3280,13 +5294,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
       ],
+      "primary_example_sentence": "This mechanism is fundamental to modern language models such as BERT and GPT.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0362,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.5385,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6298,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "gpt",
+          "gpt"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "gpt",
@@ -3308,20 +5338,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0254,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.698,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "intelligence",
+          "intelligence"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "intelligence",
@@ -3343,20 +5392,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0667,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7083,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "intelligence that",
+          "intelligence that"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "intelligence that",
@@ -3378,20 +5446,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1123,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7198,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "of artificial intelligence",
+          "of artificial intelligence"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "of artificial intelligence",
@@ -3413,20 +5500,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1123,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7198,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "artificial intelligence that",
+          "artificial intelligence that"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "artificial intelligence that",
@@ -3448,20 +5554,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 0
         },
         {
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
+      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "supporting_example_sentences": [
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1493,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.6111,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.729,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "of artificial intelligence that",
+          "of artificial intelligence that"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "of artificial intelligence that",
@@ -3483,20 +5608,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+        "The ability to generalize beyond the training data is a key challenge.",
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1234,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7127,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "the training",
+          "the training"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "the training",
@@ -3518,20 +5662,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 5
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "The ability to generalize beyond the training data is a key challenge.",
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.1443,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.7179,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "ability to generalize",
+          "ability to generalize"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "ability to generalize",
@@ -3553,20 +5716,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.1 What is Machine Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 1
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+        "The ability to generalize beyond the training data is a key challenge.",
         "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
       ],
+      "primary_example_sentence": "The ability to generalize beyond the training data is a key challenge.",
+      "supporting_example_sentences": [
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.1137,
+        "definitional_score": 1.0,
+        "domain_salience_score": 0.5455,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5603,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "the training datum",
+          "the training data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "the training data",
@@ -3588,13 +5770,29 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
       ],
+      "primary_example_sentence": "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.3531,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "label datum",
+          "labeled data"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "labeled data",
@@ -3616,13 +5814,15 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 1
+          "page_number": 1,
+          "segment_index": 2
         },
         {
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         }
       ],
       "embedding": [],
@@ -3630,6 +5830,23 @@
         "Common supervised learning tasks include classification and regression.",
         "Clustering and dimensionality reduction are typical unsupervised learning tasks."
       ],
+      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "supporting_example_sentences": [
+        "Clustering and dimensionality reduction are typical unsupervised learning tasks."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.875,
+        "sentence_quality_score": 0.7,
+        "final_score": 0.3513,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "learn task",
+          "learning tasks"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "learning tasks",
@@ -3651,20 +5868,39 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.2 Types of Learning",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 3
         },
         {
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data.",
-        "It allows models to capture long-range dependencies without relying on recurrent structures."
+        "It allows models to capture long-range dependencies without relying on recurrent structures.",
+        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
+      "primary_example_sentence": "It allows models to capture long-range dependencies without relying on recurrent structures.",
+      "supporting_example_sentences": [
+        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.6667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.35,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "structure",
+          "structures"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "structures",
@@ -3686,13 +5922,32 @@
           "chapter_id": 1,
           "chapter_title": "Chapter 1 Introduction to Machine Learning",
           "heading": "1.3 Model Evaluation",
-          "page_number": 2
+          "page_number": 2,
+          "segment_index": 4
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data."
+        "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+        "Regularization techniques are often used to mitigate overfitting."
       ],
+      "primary_example_sentence": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data.",
+      "supporting_example_sentences": [
+        "Regularization techniques are often used to mitigate overfitting."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 0.5,
+        "semantic_similarity_score": 0.0,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.6364,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4855,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "overfitte",
+          "overfitting"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "overfitting",
@@ -3714,13 +5969,39 @@
           "chapter_id": 2,
           "chapter_title": "Chapter 2 Natural Language Processing",
           "heading": "2.1 Introduction to NLP",
-          "page_number": 3
+          "page_number": 3,
+          "segment_index": 6
+        },
+        {
+          "chapter_id": 2,
+          "chapter_title": "Chapter 2 Natural Language Processing",
+          "heading": "2.1 Introduction to NLP",
+          "page_number": 3,
+          "segment_index": 7
         }
       ],
       "embedding": [],
       "example_sentences": [
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
         "It enables machines to process and analyze large amounts of natural language data."
       ],
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+      "supporting_example_sentences": [
+        "It enables machines to process and analyze large amounts of natural language data."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.151,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5663,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "of natural language",
+          "of natural language"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "of natural language",
@@ -3742,13 +6023,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 11
         }
       ],
       "embedding": [],
       "example_sentences": [
         "Each neuron applies a transformation to its input and passes the result to the next layer."
       ],
+      "primary_example_sentence": "Each neuron applies a transformation to its input and passes the result to the next layer.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.032,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.4667,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.478,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "result",
+          "result"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "result",
@@ -3770,13 +6067,39 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.2 Transformer Models",
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0312,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5169,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "self",
+          "self"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "self",
@@ -3798,13 +6121,39 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 13
+        },
+        {
+          "chapter_id": 3,
+          "chapter_title": "Chapter 3 Deep Learning",
+          "heading": "3.2 Transformer Models",
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
+      "supporting_example_sentences": [
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
+      ],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0312,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.7273,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.5169,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "attention",
+          "attention"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "attention",
@@ -3826,13 +6175,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
       ],
+      "primary_example_sentence": "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0281,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5789,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4939,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "sequence",
+          "sequence"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "sequence",
@@ -3854,13 +6219,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.2 Transformer Models",
-          "page_number": 6
+          "page_number": 6,
+          "segment_index": 14
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "The transformer architecture relies on self-attention mechanisms to process input sequences."
+        "This mechanism is fundamental to modern language models such as BERT and GPT."
       ],
+      "primary_example_sentence": "This mechanism is fundamental to modern language models such as BERT and GPT.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0362,
+        "definitional_score": 0.7,
+        "domain_salience_score": 0.5385,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.6298,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "mechanism",
+          "mechanism"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "mechanism",
@@ -3882,13 +6263,29 @@
           "chapter_id": 3,
           "chapter_title": "Chapter 3 Deep Learning",
           "heading": "3.1 Neural Networks",
-          "page_number": 5
+          "page_number": 5,
+          "segment_index": 12
         }
       ],
       "embedding": [],
       "example_sentences": [
-        "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons."
+        "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains."
       ],
+      "primary_example_sentence": "These models are capable of learning complex representations and have achieved state-of-the-art results in many domains.",
+      "supporting_example_sentences": [],
+      "example_score_breakdown": {
+        "exact_match_score": 1.0,
+        "semantic_similarity_score": 0.0288,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.5625,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4916,
+        "selection_method": "hybrid_weighted_score+mmr",
+        "term_candidates": [
+          "art",
+          "art"
+        ]
+      },
       "surface_form_variants": [
         {
           "form": "art",

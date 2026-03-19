@@ -29,6 +29,9 @@ class TerminologyEntry:
     source_locations: List[Dict[str, Any]] = field(default_factory=list)
     embedding: List[float] = field(default_factory=list)
     example_sentences: List[str] = field(default_factory=list)
+    primary_example_sentence: Optional[str] = None
+    supporting_example_sentences: List[str] = field(default_factory=list)
+    example_score_breakdown: Dict[str, Any] = field(default_factory=dict)
     surface_form_variants: List[Dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self, include_embedding: bool = True) -> Dict[str, Any]:
@@ -83,6 +86,20 @@ class TerminologyMemory:
                 if sentence not in existing.example_sentences:
                     existing.example_sentences.append(sentence)
             existing.example_sentences = existing.example_sentences[:2]
+            # Keep best-scored primary sentence if available
+            existing_score = float(existing.example_score_breakdown.get("final_score", 0.0))
+            incoming_score = float(entry.example_score_breakdown.get("final_score", 0.0))
+            if incoming_score > existing_score and entry.primary_example_sentence:
+                existing.primary_example_sentence = entry.primary_example_sentence
+                existing.example_score_breakdown = entry.example_score_breakdown
+            elif not existing.primary_example_sentence and entry.primary_example_sentence:
+                existing.primary_example_sentence = entry.primary_example_sentence
+                existing.example_score_breakdown = entry.example_score_breakdown
+            # Merge supporting examples
+            for sentence in entry.supporting_example_sentences:
+                if sentence not in existing.supporting_example_sentences:
+                    existing.supporting_example_sentences.append(sentence)
+            existing.supporting_example_sentences = existing.supporting_example_sentences[:2]
             # Merge surface form variants with accumulated frequency
             existing.surface_form_variants = self._merge_surface_form_variants(
                 existing.surface_form_variants,
@@ -168,6 +185,9 @@ class TerminologyMemory:
                 source_locations=item.get("source_locations", []),
                 embedding=item.get("embedding", []),
                 example_sentences=item.get("example_sentences", []),
+                primary_example_sentence=item.get("primary_example_sentence"),
+                supporting_example_sentences=item.get("supporting_example_sentences", []),
+                example_score_breakdown=item.get("example_score_breakdown", {}),
                 surface_form_variants=item.get("surface_form_variants", []),
             )
             memory.entries[entry.normalized_term] = entry
