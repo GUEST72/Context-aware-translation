@@ -8,6 +8,7 @@ spacy>=3.5,<4.0
 
 # --- Statistical / Utility ---
 scikit-learn>=1.2
+rank-bm25>=0.2
 
 # --- Translation (optional — English → Arabic) ---
 transformers>=4.30
