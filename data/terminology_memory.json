@@ -126,11 +126,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0217,
+        "semantic_similarity_score": 0.1965,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7054,
+        "final_score": 0.7491,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "tokens",
@@ -187,11 +187,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.026,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5383,
+        "final_score": 0.5318,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "training datum",
@@ -241,11 +241,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.04,
+        "semantic_similarity_score": 0.7148,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3886,
+        "final_score": 0.5573,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "application",
@@ -337,11 +337,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.6667,
-        "semantic_similarity_score": 0.0216,
+        "semantic_similarity_score": 0.973,
         "definitional_score": 1.0,
         "domain_salience_score": 0.625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5992,
+        "final_score": 0.837,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "model",
@@ -411,11 +411,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0234,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5149,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "input",
@@ -470,20 +470,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "This mechanism is fundamental to modern language models such as BERT and GPT."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
-      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "This mechanism is fundamental to modern language models such as BERT and GPT."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0324,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6111,
+        "semantic_similarity_score": 1.7799,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6998,
+        "final_score": 0.9736,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "language",
@@ -531,20 +531,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
-      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1075,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6111,
+        "semantic_similarity_score": 1.7036,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7186,
+        "final_score": 0.9545,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "natural language processing",
@@ -601,11 +601,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0658,
+        "semantic_similarity_score": 1.5882,
         "definitional_score": 0.7,
         "domain_salience_score": 0.7647,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6711,
+        "final_score": 1.0518,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "word",
@@ -682,11 +682,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0355,
+        "semantic_similarity_score": 1.4674,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7002,
+        "final_score": 1.0582,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "learn",
@@ -736,11 +736,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0735,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7101,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "artificial intelligence",
@@ -844,11 +844,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0323,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6899,
+        "final_score": 0.6818,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "ability",
@@ -896,20 +896,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
-      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6087,
+        "semantic_similarity_score": 1.1188,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5413,
+        "final_score": 0.6583,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "system",
@@ -966,11 +966,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0186,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6959,
+        "final_score": 0.6913,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "performance",
@@ -1018,20 +1018,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
-      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0672,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6111,
+        "semantic_similarity_score": 1.7036,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7085,
+        "final_score": 0.9545,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "natural language",
@@ -1074,11 +1074,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0234,
+        "semantic_similarity_score": -0.0575,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7058,
+        "final_score": 0.6856,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "tokenization",
@@ -1128,11 +1128,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0625,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7069,
+        "final_score": 0.6913,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "machine learning",
@@ -1182,11 +1182,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0853,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7031,
+        "final_score": 0.6818,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "ability to",
@@ -1220,20 +1220,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Common supervised learning tasks include classification and regression.",
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
+        "Common supervised learning tasks include classification and regression."
       ],
-      "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
+      "primary_example_sentence": "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output.",
       "supporting_example_sentences": [
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+        "Common supervised learning tasks include classification and regression."
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0872,
+        "semantic_similarity_score": -0.0914,
         "definitional_score": 0.0,
-        "domain_salience_score": 0.875,
-        "sentence_quality_score": 0.7,
-        "final_score": 0.523,
+        "domain_salience_score": 0.6875,
+        "sentence_quality_score": 1.0,
+        "final_score": 0.4803,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "supervised learning",
@@ -1336,19 +1336,19 @@
       "embedding": [],
       "example_sentences": [
         "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
       "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
       "supporting_example_sentences": [
-        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+        "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data."
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0129,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5445,
+        "final_score": 0.5413,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "datum and",
@@ -1396,20 +1396,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "This helps improve the performance of downstream natural language processing tasks.",
-        "Common supervised learning tasks include classification and regression."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
+        "This helps improve the performance of downstream natural language processing tasks."
       ],
-      "primary_example_sentence": "This helps improve the performance of downstream natural language processing tasks.",
+      "primary_example_sentence": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning.",
       "supporting_example_sentences": [
-        "Common supervised learning tasks include classification and regression."
+        "This helps improve the performance of downstream natural language processing tasks."
       ],
       "example_score_breakdown": {
-        "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0,
+        "exact_match_score": 0.0,
+        "semantic_similarity_score": 1.1145,
         "definitional_score": 0.0,
-        "domain_salience_score": 0.7273,
+        "domain_salience_score": 0.7647,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3591,
+        "final_score": 0.4933,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "task",
@@ -1466,11 +1466,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0186,
+        "semantic_similarity_score": 0.4845,
         "definitional_score": 0.7,
         "domain_salience_score": 0.6364,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6401,
+        "final_score": 0.7566,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "a model",
@@ -1526,19 +1526,19 @@
       "embedding": [],
       "example_sentences": [
         "Tokenization is the process of splitting text into smaller units called tokens.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "It enables machines to process and analyze large amounts of natural language data."
       ],
       "primary_example_sentence": "Tokenization is the process of splitting text into smaller units called tokens.",
       "supporting_example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "It enables machines to process and analyze large amounts of natural language data."
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.6667,
-        "semantic_similarity_score": 0.038,
+        "semantic_similarity_score": 1.0174,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6095,
+        "final_score": 0.8543,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "process",
@@ -1592,20 +1592,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
-      "primary_example_sentence": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning."
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0768,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6111,
+        "semantic_similarity_score": 1.4378,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7109,
+        "final_score": 0.888,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "language processing",
@@ -1660,20 +1660,20 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
-      "primary_example_sentence": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed.",
+      "primary_example_sentence": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems.",
       "supporting_example_sentences": [
-        "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems."
+        "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed."
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.6667,
-        "semantic_similarity_score": 0.0217,
-        "definitional_score": 1.0,
-        "domain_salience_score": 0.6087,
+        "semantic_similarity_score": 1.8054,
+        "definitional_score": 0.0,
+        "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5967,
+        "final_score": 0.8799,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "machine",
@@ -1780,11 +1780,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0269,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.698,
+        "final_score": 0.6913,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "branch",
@@ -1824,11 +1824,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0773,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6087,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7106,
+        "final_score": 0.6913,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "their performance",
@@ -1868,11 +1868,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0411,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5556,
         "sentence_quality_score": 0.7,
-        "final_score": 0.3136,
+        "final_score": 0.3033,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "building model",
@@ -1956,11 +1956,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0286,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3603,
+        "final_score": 0.3531,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "practical application",
@@ -2000,11 +2000,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0831,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3739,
+        "final_score": 0.3531,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "machine learning algorithm",
@@ -2044,11 +2044,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0286,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3603,
+        "final_score": 0.3531,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "recommendation system",
@@ -2088,11 +2088,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0899,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5256,
+        "final_score": 0.5031,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "fraud detection",
@@ -2132,11 +2132,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0286,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3603,
+        "final_score": 0.3531,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "predictive analytic",
@@ -2176,11 +2176,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1086,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.709,
+        "final_score": 0.6818,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "key challenge",
@@ -2220,11 +2220,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0301,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6875,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3607,
+        "final_score": 0.3531,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "correspond output",
@@ -2258,20 +2258,17 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "Common supervised learning tasks include classification and regression.",
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
+        "Common supervised learning tasks include classification and regression."
       ],
       "primary_example_sentence": "Common supervised learning tasks include classification and regression.",
-      "supporting_example_sentences": [
-        "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output."
-      ],
+      "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.1674,
+        "semantic_similarity_score": -0.1118,
         "definitional_score": 0.0,
         "domain_salience_score": 0.875,
         "sentence_quality_score": 0.7,
-        "final_score": 0.3931,
+        "final_score": 0.3233,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "common supervised learning task",
@@ -2311,11 +2308,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0487,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.875,
         "sentence_quality_score": 0.7,
-        "final_score": 0.5134,
+        "final_score": 0.5012,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "classification",
@@ -2355,11 +2352,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0487,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.875,
         "sentence_quality_score": 0.7,
-        "final_score": 0.5134,
+        "final_score": 0.5012,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "regression",
@@ -2399,11 +2396,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.016,
+        "semantic_similarity_score": -0.0488,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6471,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3511,
+        "final_score": 0.3349,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "unsupervised learn deal",
@@ -2443,11 +2440,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0284,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6471,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3542,
+        "final_score": 0.3471,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "unlabeled datum",
@@ -2531,11 +2528,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.29,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7778,
         "sentence_quality_score": 0.7,
-        "final_score": 0.5592,
+        "final_score": 0.4867,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "clustering and dimensionality reduction",
@@ -2575,11 +2572,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.1575,
+        "semantic_similarity_score": -0.1192,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7778,
         "sentence_quality_score": 0.7,
-        "final_score": 0.376,
+        "final_score": 0.3069,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "typical unsupervised learning task",
@@ -2619,11 +2616,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0268,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.6364,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6421,
+        "final_score": 0.6355,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "noise",
@@ -2707,11 +2704,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.077,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.6364,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6547,
+        "final_score": 0.6355,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "its performance",
@@ -2751,11 +2748,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0245,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.6364,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4916,
+        "final_score": 0.4855,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "unseen datum",
@@ -2795,11 +2792,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0433,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5,
         "sentence_quality_score": 0.7,
-        "final_score": 0.3058,
+        "final_score": 0.295,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "regularization technique",
@@ -2839,11 +2836,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0247,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.619,
         "sentence_quality_score": 1.0,
-        "final_score": 0.499,
+        "final_score": 0.4929,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "balance",
@@ -2877,17 +2874,20 @@
       ],
       "embedding": [],
       "example_sentences": [
+        "High bias leads to underfitting, while high variance leads to overfitting.",
         "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
       ],
-      "primary_example_sentence": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data.",
-      "supporting_example_sentences": [],
+      "primary_example_sentence": "High bias leads to underfitting, while high variance leads to overfitting.",
+      "supporting_example_sentences": [
+        "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data."
+      ],
       "example_score_breakdown": {
         "exact_match_score": 0.0,
-        "semantic_similarity_score": 0.0957,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
-        "domain_salience_score": 0.619,
+        "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.2168,
+        "final_score": 0.2091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "model 's ability",
@@ -2927,11 +2927,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0957,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.619,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5168,
+        "final_score": 0.4929,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "its ability",
@@ -2971,11 +2971,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0226,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.619,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3485,
+        "final_score": 0.3429,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "new datum",
@@ -3015,11 +3015,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1251,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5404,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "high bias",
@@ -3059,11 +3059,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1251,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5404,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "high variance",
@@ -3106,11 +3106,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0212,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5144,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "bias",
@@ -3153,11 +3153,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0212,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5144,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "variance",
@@ -3197,11 +3197,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0309,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6994,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "subfield",
@@ -3241,11 +3241,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0309,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6994,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "interaction",
@@ -3329,11 +3329,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0968,
+        "semantic_similarity_score": -0.0655,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7159,
+        "final_score": 0.6753,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "human language",
@@ -3373,11 +3373,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0344,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6923,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3624,
+        "final_score": 0.3538,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "large amount",
@@ -3411,20 +3411,17 @@
       ],
       "embedding": [],
       "example_sentences": [
-        "It enables machines to process and analyze large amounts of natural language data.",
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
+        "It enables machines to process and analyze large amounts of natural language data."
       ],
       "primary_example_sentence": "It enables machines to process and analyze large amounts of natural language data.",
-      "supporting_example_sentences": [
-        "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language."
-      ],
+      "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0615,
+        "semantic_similarity_score": -0.0991,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6923,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3692,
+        "final_score": 0.3291,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "natural language datum",
@@ -3464,11 +3461,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1313,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5614,
+        "final_score": 0.5286,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "machine translation",
@@ -3508,11 +3505,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0721,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5466,
+        "final_score": 0.5286,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "sentiment",
@@ -3552,11 +3549,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0721,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5466,
+        "final_score": 0.5286,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "analysis",
@@ -3596,11 +3593,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0321,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3866,
+        "final_score": 0.3786,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "answer system",
@@ -3640,11 +3637,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1437,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.625,
         "sentence_quality_score": 0.7,
-        "final_score": 0.4997,
+        "final_score": 0.4637,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "both syntax",
@@ -3728,11 +3725,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0385,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7096,
+        "final_score": 0.7,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "text",
@@ -3904,11 +3901,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0932,
+        "semantic_similarity_score": -0.0575,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6154,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5156,
+        "final_score": 0.4779,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "tokenization strategy",
@@ -3948,11 +3945,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1199,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.7647,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6847,
+        "final_score": 0.6547,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "word removal",
@@ -3992,11 +3989,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0878,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.7647,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5266,
+        "final_score": 0.5047,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "common word",
@@ -4036,11 +4033,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.165,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.7647,
         "sentence_quality_score": 1.0,
-        "final_score": 0.696,
+        "final_score": 0.6547,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "little semantic meaning",
@@ -4080,11 +4077,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.2439,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4201,
+        "final_score": 0.3591,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "downstream natural language processing task",
@@ -4124,11 +4121,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0274,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5068,
+        "final_score": 0.5,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "lemmatization",
@@ -4168,11 +4165,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0788,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5197,
+        "final_score": 0.5,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "their base",
@@ -4212,11 +4209,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0788,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5197,
+        "final_score": 0.5,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "dictionary form",
@@ -4256,11 +4253,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0476,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3619,
+        "final_score": 0.35,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "different inflect form",
@@ -4300,11 +4297,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0689,
+        "semantic_similarity_score": -0.0189,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5172,
+        "final_score": 0.4953,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "single term",
@@ -4344,11 +4341,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.2291,
+        "semantic_similarity_score": -0.0316,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5714,
         "sentence_quality_score": 0.7,
-        "final_score": 0.513,
+        "final_score": 0.4478,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "accurate term normalization",
@@ -4391,11 +4388,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0167,
+        "semantic_similarity_score": -0.0189,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5042,
+        "final_score": 0.4953,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "term",
@@ -4445,11 +4442,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.6667,
-        "semantic_similarity_score": 0.0941,
+        "semantic_similarity_score": 0.785,
         "definitional_score": 1.0,
         "domain_salience_score": 0.625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6173,
+        "final_score": 0.79,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "neural network",
@@ -4495,11 +4492,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0905,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7164,
+        "final_score": 0.6937,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "computational model",
@@ -4636,11 +4633,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.032,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.4667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.478,
+        "final_score": 0.47,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "transformation",
@@ -4680,11 +4677,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0924,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.4667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4931,
+        "final_score": 0.47,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "its input",
@@ -4724,11 +4721,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0924,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.4667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4931,
+        "final_score": 0.47,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "next layer",
@@ -4768,11 +4765,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1061,
+        "semantic_similarity_score": -0.0258,
         "definitional_score": 1.0,
         "domain_salience_score": 0.8,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7465,
+        "final_score": 0.7135,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "deep learning",
@@ -4812,11 +4809,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0356,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.8,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5789,
+        "final_score": 0.57,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "multiple hide layer",
@@ -4856,11 +4853,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0264,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.341,
+        "final_score": 0.3344,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "complex representation",
@@ -4900,11 +4897,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0264,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.341,
+        "final_score": 0.3344,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "many domain",
@@ -4944,11 +4941,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1108,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5368,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "transformer architecture",
@@ -4988,11 +4985,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.035,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3678,
+        "final_score": 0.3591,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "input sequence",
@@ -5032,11 +5029,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0335,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.6667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3584,
+        "final_score": 0.35,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "recurrent structure",
@@ -5078,19 +5075,19 @@
       "embedding": [],
       "example_sentences": [
         "The transformer architecture relies on self-attention mechanisms to process input sequences.",
-        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
+        "It allows models to capture long-range dependencies without relying on recurrent structures."
       ],
       "primary_example_sentence": "The transformer architecture relies on self-attention mechanisms to process input sequences.",
       "supporting_example_sentences": [
-        "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input."
+        "It allows models to capture long-range dependencies without relying on recurrent structures."
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.0,
-        "semantic_similarity_score": 0.0907,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.2318,
+        "final_score": 0.2091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "self attention",
@@ -5174,11 +5171,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0257,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5789,
         "sentence_quality_score": 1.0,
-        "final_score": 0.3433,
+        "final_score": 0.3368,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "relevant part",
@@ -5218,11 +5215,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.0985,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.5385,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4954,
+        "final_score": 0.4708,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "modern language model",
@@ -5262,11 +5259,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0362,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.5385,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6298,
+        "final_score": 0.6208,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "bert",
@@ -5306,11 +5303,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0362,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.5385,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6298,
+        "final_score": 0.6208,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "gpt",
@@ -5360,11 +5357,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0254,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.698,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "intelligence",
@@ -5414,11 +5411,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0667,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7083,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "intelligence that",
@@ -5468,11 +5465,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1123,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7198,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "of artificial intelligence",
@@ -5522,11 +5519,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1123,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7198,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "artificial intelligence that",
@@ -5576,11 +5573,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1493,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.6111,
         "sentence_quality_score": 1.0,
-        "final_score": 0.729,
+        "final_score": 0.6917,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "of artificial intelligence that",
@@ -5630,11 +5627,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1234,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7127,
+        "final_score": 0.6818,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "the training",
@@ -5684,11 +5681,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.1443,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.7179,
+        "final_score": 0.6818,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "ability to generalize",
@@ -5738,11 +5735,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 0.5,
-        "semantic_similarity_score": 0.1137,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 1.0,
         "domain_salience_score": 0.5455,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5603,
+        "final_score": 0.5318,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "the training datum",
@@ -5991,11 +5988,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.151,
+        "semantic_similarity_score": 1.0462,
         "definitional_score": 0.0,
         "domain_salience_score": 0.8571,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5663,
+        "final_score": 0.7901,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "of natural language",
@@ -6035,11 +6032,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.032,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.4667,
         "sentence_quality_score": 1.0,
-        "final_score": 0.478,
+        "final_score": 0.47,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "result",
@@ -6089,11 +6086,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0312,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5169,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "self",
@@ -6143,11 +6140,11 @@
       ],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0312,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.7273,
         "sentence_quality_score": 1.0,
-        "final_score": 0.5169,
+        "final_score": 0.5091,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "attention",
@@ -6187,11 +6184,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0281,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5789,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4939,
+        "final_score": 0.4868,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "sequence",
@@ -6231,11 +6228,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0362,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.7,
         "domain_salience_score": 0.5385,
         "sentence_quality_score": 1.0,
-        "final_score": 0.6298,
+        "final_score": 0.6208,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "mechanism",
@@ -6275,11 +6272,11 @@
       "supporting_example_sentences": [],
       "example_score_breakdown": {
         "exact_match_score": 1.0,
-        "semantic_similarity_score": 0.0288,
+        "semantic_similarity_score": 0.0,
         "definitional_score": 0.0,
         "domain_salience_score": 0.5625,
         "sentence_quality_score": 1.0,
-        "final_score": 0.4916,
+        "final_score": 0.4844,
         "selection_method": "hybrid_weighted_score+mmr",
         "term_candidates": [
           "art",

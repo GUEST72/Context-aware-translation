@@ -67,7 +67,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--no-embed",
         action="store_true",
-        help="Disable embedding generation.",
+        help="Disable embedding generation (recommended for BM25 approach).",
     )
     parser.add_argument(
         "--no-include-embeddings",

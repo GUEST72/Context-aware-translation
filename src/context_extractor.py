@@ -10,9 +10,7 @@ Responsible for:
 import re
 from typing import Any, Dict, List
 
-from scipy.sparse import csr_matrix
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from rank_bm25 import BM25Okapi
 from spacy.lang.en.stop_words import STOP_WORDS
 
 
@@ -117,16 +115,24 @@ class ContextExtractor:
         surface_forms: List[str],
         candidate_sentences: List[str],
     ) -> List[Dict[str, Any]]:
-        """Score candidates with a weighted translation-utility objective."""
+        """Score candidates with weighted translation-utility objective using BM25."""
         term_candidates = [canonical_term] + surface_forms
         query_text = f"{canonical_term} translation context definition technical meaning"
 
-        vectorizer = TfidfVectorizer(lowercase=True, ngram_range=(1, 2))
-        matrix = vectorizer.fit_transform([query_text] + candidate_sentences)
-        matrix = csr_matrix(matrix)
-        query_vec = matrix[0]
-        sentence_vecs = matrix[1:]
-        semantic_scores = cosine_similarity(query_vec, sentence_vecs).flatten().tolist()
+        # Tokenize query and sentences for BM25
+        def tokenize(text: str) -> List[str]:
+            return [
+                token.lower()
+                for token in self._WORD_PATTERN.findall(text)
+                if token.lower() not in STOP_WORDS
+            ]
+
+        query_tokens = tokenize(query_text)
+        corpus_tokens = [tokenize(sentence) for sentence in candidate_sentences]
+
+        # Build BM25 index
+        bm25 = BM25Okapi(corpus_tokens)
+        semantic_scores = bm25.get_scores(query_tokens)
 
         scored: List[Dict[str, Any]] = []
         for idx, sentence in enumerate(candidate_sentences):
@@ -147,7 +153,6 @@ class ContextExtractor:
             scored.append(
                 {
                     "sentence": sentence,
-                    "vector": sentence_vecs[idx],
                     "exact": exact,
                     "semantic": semantic,
                     "final_score": float(round(final_score, 4)),
@@ -174,7 +179,7 @@ class ContextExtractor:
         return scored
 
     def _select_with_mmr(self, scored: List[Dict[str, Any]], max_examples: int) -> List[int]:
-        """Select sentences using MMR for relevance + diversity."""
+        """Select sentences using MMR for relevance + diversity (score-based similarity)."""
         if not scored:
             return []
         if len(scored) <= max_examples:
@@ -190,12 +195,15 @@ class ContextExtractor:
                     continue
 
                 relevance = scored[idx]["final_score"]
-                candidate_vec = scored[idx]["vector"]
+                candidate_semantic = scored[idx]["semantic"]
 
+                # Use semantic score difference as diversity proxy
+                # (dissimilar semantic scores = diverse content)
                 max_sim = 0.0
                 for selected_idx in selected:
-                    selected_vec = scored[selected_idx]["vector"]
-                    sim = float(cosine_similarity(candidate_vec, selected_vec)[0][0])
+                    selected_semantic = scored[selected_idx]["semantic"]
+                    # Normalize to [0,1] range
+                    sim = abs(candidate_semantic - selected_semantic)
                     if sim > max_sim:
                         max_sim = sim
 
