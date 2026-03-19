@@ -7,19 +7,16 @@
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.1 What is Machine Learning",
-          "subsection": null,
           "paragraph": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed. It focuses on building models that generalize from examples."
         },
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.1 What is Machine Learning",
-          "subsection": null,
           "paragraph": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics. The ability to generalize beyond the training data is a key challenge."
         },
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.2 Types of Learning",
-          "subsection": null,
           "paragraph": "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output. Common supervised learning tasks include classification and regression."
         }
       ]
@@ -30,19 +27,16 @@
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.2 Types of Learning",
-          "subsection": null,
           "paragraph": "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data. Clustering and dimensionality reduction are typical unsupervised learning tasks."
         },
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.3 Model Evaluation",
-          "subsection": null,
           "paragraph": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data. Regularization techniques are often used to mitigate overfitting."
         },
         {
           "chapter": "Chapter 1 Introduction to Machine Learning",
           "section": "1.3 Model Evaluation",
-          "subsection": null,
           "paragraph": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data. High bias leads to underfitting, while high variance leads to overfitting."
         }
       ]
@@ -53,13 +47,11 @@
         {
           "chapter": "Chapter 2 Natural Language Processing",
           "section": "2.1 Introduction to NLP",
-          "subsection": null,
           "paragraph": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language. It enables machines to process and analyze large amounts of natural language data."
         },
         {
           "chapter": "Chapter 2 Natural Language Processing",
           "section": "2.1 Introduction to NLP",
-          "subsection": null,
           "paragraph": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems. These applications require understanding both syntax and semantics."
         }
       ]
@@ -70,19 +62,16 @@
         {
           "chapter": "Chapter 2 Natural Language Processing",
           "section": "2.2 Text Preprocessing",
-          "subsection": null,
           "paragraph": "Tokenization is the process of splitting text into smaller units called tokens. These tokens may represent words, subwords, or characters depending on the tokenization strategy."
         },
         {
           "chapter": "Chapter 2 Natural Language Processing",
           "section": "2.2 Text Preprocessing",
-          "subsection": null,
           "paragraph": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning. This helps improve the performance of downstream natural language processing tasks."
         },
         {
           "chapter": "Chapter 2 Natural Language Processing",
           "section": "2.2 Text Preprocessing",
-          "subsection": null,
           "paragraph": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term. This is crucial for accurate term normalization."
         }
       ]
@@ -93,13 +82,11 @@
         {
           "chapter": "Chapter 3 Deep Learning",
           "section": "3.1 Neural Networks",
-          "subsection": null,
           "paragraph": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons. Each neuron applies a transformation to its input and passes the result to the next layer."
         },
         {
           "chapter": "Chapter 3 Deep Learning",
           "section": "3.1 Neural Networks",
-          "subsection": null,
           "paragraph": "Deep learning refers to neural networks with multiple hidden layers. These models are capable of learning complex representations and have achieved state-of-the-art results in many domains."
         }
       ]
@@ -110,13 +97,11 @@
         {
           "chapter": "Chapter 3 Deep Learning",
           "section": "3.2 Transformer Models",
-          "subsection": null,
           "paragraph": "The transformer architecture relies on self-attention mechanisms to process input sequences. It allows models to capture long-range dependencies without relying on recurrent structures."
         },
         {
           "chapter": "Chapter 3 Deep Learning",
           "section": "3.2 Transformer Models",
-          "subsection": null,
           "paragraph": "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input. This mechanism is fundamental to modern language models such as BERT and GPT."
         }
       ]
