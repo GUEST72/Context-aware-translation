@@ -9,7 +9,7 @@ Responsible for:
 
 import json
 import logging
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -23,22 +23,26 @@ class TextSegment:
         chapter_id: int,
         chapter_title: str,
         heading: str,
+        page_number: Optional[int] = None,
     ):
         self.text = text
         self.chapter_id = chapter_id
         self.chapter_title = chapter_title
         self.heading = heading
+        self.page_number = page_number
 
     def to_dict(self) -> Dict[str, Any]:
         return {
             "chapter_id": self.chapter_id,
             "chapter_title": self.chapter_title,
             "heading": self.heading,
+            "page_number": self.page_number,
         }
 
     def __repr__(self) -> str:
         return (
             f"TextSegment(chapter={self.chapter_id}, "
+            f"page={self.page_number}, "
             f"heading='{self.heading[:30]}...', "
             f"text='{self.text[:50]}...')"
         )
@@ -50,13 +54,13 @@ class BookLoader:
     Extracts paragraphs as TextSegment objects with source metadata.
     """
 
-    REQUIRED_BOOK_KEYS = {"book_title", "chapters"}
-    REQUIRED_CHAPTER_KEYS = {"chapter_id", "chapter_title", "sections"}
-    REQUIRED_SECTION_KEYS = {"heading", "paragraphs"}
+    REQUIRED_BOOK_KEYS = {"book_title", "pages"}
+    REQUIRED_PAGE_KEYS = {"page", "paragraphs"}
+    REQUIRED_PARAGRAPH_KEYS = {"chapter", "section", "paragraph"}
 
     def __init__(self, filepath: str):
         self.filepath = filepath
-        self.book_data: Optional[Dict] = None
+        self.book_data: Optional[Dict[str, Any]] = None
         self.book_title: str = ""
         self.segments: List[TextSegment] = []
 
@@ -74,6 +78,8 @@ class BookLoader:
             raise ValueError(f"Malformed JSON: {e}")
 
         self._validate_structure()
+        if self.book_data is None:
+            raise ValueError("Book data is empty after loading.")
         self.book_title = self.book_data.get("book_title", "Unknown")
         self._extract_segments()
         logger.info(
@@ -90,48 +96,47 @@ class BookLoader:
         if missing:
             raise ValueError(f"Missing required book keys: {missing}")
 
-        if not isinstance(self.book_data["chapters"], list):
-            raise ValueError("'chapters' must be a list.")
+        if not isinstance(self.book_data["pages"], list):
+            raise ValueError("'pages' must be a list.")
 
-        for idx, chapter in enumerate(self.book_data["chapters"]):
-            self._validate_chapter(chapter, idx)
+        for idx, page in enumerate(self.book_data["pages"]):
+            self._validate_page(page, idx)
 
-    def _validate_chapter(self, chapter: Dict, idx: int) -> None:
-        """Validate a single chapter's structure."""
-        if not isinstance(chapter, dict):
-            raise ValueError(f"Chapter at index {idx} must be a dictionary.")
+    def _validate_page(self, page: Dict, idx: int) -> None:
+        """Validate a single page's structure."""
+        if not isinstance(page, dict):
+            raise ValueError(f"Page at index {idx} must be a dictionary.")
 
-        missing = self.REQUIRED_CHAPTER_KEYS - set(chapter.keys())
+        missing = self.REQUIRED_PAGE_KEYS - set(page.keys())
         if missing:
-            logger.warning(
-                f"Chapter at index {idx} missing keys: {missing}. Skipping."
-            )
+            logger.warning(f"Page at index {idx} missing keys: {missing}. Skipping.")
             return
 
-        if not isinstance(chapter["sections"], list):
-            raise ValueError(
-                f"Chapter {chapter.get('chapter_id', idx)}: "
-                "'sections' must be a list."
+        if not isinstance(page["paragraphs"], list):
+            raise ValueError(f"Page {page.get('page', idx)}: 'paragraphs' must be a list.")
+
+        for para_idx, paragraph_entry in enumerate(page["paragraphs"]):
+            self._validate_paragraph_entry(
+                paragraph_entry,
+                page.get("page", idx),
+                para_idx,
             )
 
-        for sec_idx, section in enumerate(chapter["sections"]):
-            self._validate_section(section, chapter.get("chapter_id", idx), sec_idx)
-
-    def _validate_section(
-        self, section: Dict, chapter_id: int, sec_idx: int
+    def _validate_paragraph_entry(
+        self, paragraph_entry: Dict, page_number: int, para_idx: int
     ) -> None:
-        """Validate a single section's structure."""
-        if not isinstance(section, dict):
+        """Validate a single paragraph entry structure."""
+        if not isinstance(paragraph_entry, dict):
             logger.warning(
-                f"Section at index {sec_idx} in chapter {chapter_id} "
+                f"Paragraph at index {para_idx} on page {page_number} "
                 "is not a dictionary. Skipping."
             )
             return
 
-        missing = self.REQUIRED_SECTION_KEYS - set(section.keys())
+        missing = self.REQUIRED_PARAGRAPH_KEYS - set(paragraph_entry.keys())
         if missing:
             logger.warning(
-                f"Section at index {sec_idx} in chapter {chapter_id} "
+                f"Paragraph at index {para_idx} on page {page_number} "
                 f"missing keys: {missing}. Skipping."
             )
 
@@ -139,41 +144,62 @@ class BookLoader:
         """Extract all text segments from the book."""
         self.segments = []
         seen_texts = set()
+        chapter_id_map: Dict[str, int] = {}
+        next_chapter_id = 1
 
-        for chapter in self.book_data.get("chapters", []):
-            chapter_id = chapter.get("chapter_id", 0)
-            chapter_title = chapter.get("chapter_title", "Unknown Chapter")
+        if self.book_data is None:
+            return
 
-            for section in chapter.get("sections", []):
-                heading = section.get("heading", "No Heading")
-                paragraphs = section.get("paragraphs", [])
+        for page in self.book_data.get("pages", []):
+            if not isinstance(page, dict):
+                continue
 
-                if not isinstance(paragraphs, list):
-                    logger.warning(
-                        f"Paragraphs in '{heading}' (chapter {chapter_id}) "
-                        "is not a list. Skipping."
-                    )
+            page_number = page.get("page")
+            paragraphs = page.get("paragraphs", [])
+
+            if not isinstance(paragraphs, list):
+                logger.warning(
+                    f"Paragraphs on page {page_number} is not a list. Skipping."
+                )
+                continue
+
+            for entry in paragraphs:
+                if not isinstance(entry, dict):
                     continue
 
-                for para in paragraphs:
-                    if not isinstance(para, str) or not para.strip():
-                        continue
+                chapter_title = str(entry.get("chapter", "Unknown Chapter")).strip()
+                heading = str(entry.get("section", "No Heading")).strip()
+                paragraph_text = entry.get("paragraph", "")
 
-                    # Deduplicate identical paragraphs in the same section
-                    dedup_key = (chapter_id, heading, para.strip())
-                    if dedup_key in seen_texts:
-                        logger.debug(f"Duplicate paragraph skipped in '{heading}'")
-                        continue
-                    seen_texts.add(dedup_key)
+                if not chapter_title:
+                    chapter_title = "Unknown Chapter"
+                if not heading:
+                    heading = "No Heading"
 
-                    self.segments.append(
-                        TextSegment(
-                            text=para.strip(),
-                            chapter_id=chapter_id,
-                            chapter_title=chapter_title,
-                            heading=heading,
-                        )
+                if not isinstance(paragraph_text, str) or not paragraph_text.strip():
+                    continue
+
+                if chapter_title not in chapter_id_map:
+                    chapter_id_map[chapter_title] = next_chapter_id
+                    next_chapter_id += 1
+                chapter_id = chapter_id_map[chapter_title]
+
+                # Deduplicate identical paragraphs in the same section
+                dedup_key = (chapter_id, heading, paragraph_text.strip())
+                if dedup_key in seen_texts:
+                    logger.debug(f"Duplicate paragraph skipped in '{heading}'")
+                    continue
+                seen_texts.add(dedup_key)
+
+                self.segments.append(
+                    TextSegment(
+                        text=paragraph_text.strip(),
+                        chapter_id=chapter_id,
+                        chapter_title=chapter_title,
+                        heading=heading,
+                        page_number=page_number,
                     )
+                )
 
     def get_all_text(self) -> str:
         """Return all paragraph text concatenated (for corpus-level analysis)."""
