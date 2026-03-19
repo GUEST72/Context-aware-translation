@@ -1,94 +1,123 @@
 {
-  "book_title": "Foundations of Natural Language Processing and Machine Learning",
-  "chapters": [
+  "book_title": "Foundations of Machine Learning and Natural Language Processing",
+  "pages": [
     {
-      "chapter_id": 1,
-      "chapter_title": "Introduction to Natural Language Processing",
-      "sections": [
+      "page": 1,
+      "paragraphs": [
         {
-          "heading": "What is Natural Language Processing",
-          "paragraphs": [
-            "Natural Language Processing (NLP) is a subfield of artificial intelligence that focuses on the interaction between computers and human language. The goal of natural language processing is to enable computers to understand, interpret, and generate human language in a meaningful way.",
-            "Natural language processing combines computational linguistics with statistical, machine learning, and deep learning models. These approaches allow computers to process human language in the form of text or voice data.",
-            "Tokenization is the process of breaking down text into smaller units called tokens. Tokens can be words, subwords, or characters depending on the tokenization strategy used.",
-            "Part-of-speech tagging is the process of assigning a grammatical category to each token in a sentence. Common categories include nouns, verbs, adjectives, and adverbs. Part-of-speech tagging is also known as POS tagging."
-          ]
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.1 What is Machine Learning",
+          "subsection": null,
+          "paragraph": "Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and improve their performance without being explicitly programmed. It focuses on building models that generalize from examples."
         },
         {
-          "heading": "Text Preprocessing",
-          "paragraphs": [
-            "Text preprocessing refers to the set of techniques used to clean and prepare raw text data for further analysis. Text preprocessing is a critical step in any natural language processing pipeline.",
-            "Stemming is the process of reducing words to their root form by removing suffixes. For example, the words running, runner, and runs are all reduced to the stem run.",
-            "Lemmatization is a more sophisticated approach than stemming. Lemmatization uses vocabulary and morphological analysis to return the base or dictionary form of a word, known as the lemma.",
-            "Stop words are common words that carry little meaningful information. Examples include the, is, at, and which. Stop word removal is a common preprocessing step in text analysis.",
-            "Named Entity Recognition (NER) is the task of identifying and classifying named entities in text into predefined categories such as person names, organizations, locations, and dates."
-          ]
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.1 What is Machine Learning",
+          "subsection": null,
+          "paragraph": "In practical applications, machine learning algorithms are used in recommendation systems, fraud detection, and predictive analytics. The ability to generalize beyond the training data is a key challenge."
+        },
+        {
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.2 Types of Learning",
+          "subsection": null,
+          "paragraph": "Supervised learning involves training a model using labeled data, where each input is paired with a corresponding output. Common supervised learning tasks include classification and regression."
         }
       ]
     },
     {
-      "chapter_id": 2,
-      "chapter_title": "Machine Learning Fundamentals",
-      "sections": [
+      "page": 2,
+      "paragraphs": [
         {
-          "heading": "Introduction to Machine Learning",
-          "paragraphs": [
-            "Machine learning is a branch of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of algorithms that can access data and use it to learn for themselves.",
-            "Supervised learning is a type of machine learning where the model is trained on labeled data. In supervised learning, each training example consists of an input and a desired output.",
-            "Unsupervised learning is a type of machine learning that deals with unlabeled data. The goal of unsupervised learning is to find hidden patterns or intrinsic structures in the data.",
-            "Reinforcement learning is a type of machine learning where an agent learns to make decisions by performing actions in an environment. Reinforcement learning is based on the concept of reward signals."
-          ]
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.2 Types of Learning",
+          "subsection": null,
+          "paragraph": "Unsupervised learning deals with unlabeled data and aims to discover hidden structures or patterns within the data. Clustering and dimensionality reduction are typical unsupervised learning tasks."
         },
         {
-          "heading": "Neural Networks",
-          "paragraphs": [
-            "A neural network is a computational model inspired by the structure and function of biological neural networks. Neural networks consist of layers of interconnected nodes called neurons.",
-            "Deep learning is a subset of machine learning that uses neural networks with many layers. Deep learning has achieved remarkable results in image recognition, natural language processing, and speech recognition.",
-            "A convolutional neural network (CNN) is a type of deep learning model primarily used for image processing. Convolutional neural networks use convolutional layers to automatically learn spatial features from input data.",
-            "A recurrent neural network (RNN) is a type of neural network designed for sequential data processing. Recurrent neural networks maintain a hidden state that captures information from previous time steps.",
-            "The activation function is a mathematical function applied to the output of each neuron. Common activation functions include ReLU, sigmoid, and tanh. The activation function introduces non-linearity into the network."
-          ]
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.3 Model Evaluation",
+          "subsection": null,
+          "paragraph": "Overfitting occurs when a model learns the training data too well, including noise and outliers, which negatively impacts its performance on unseen data. Regularization techniques are often used to mitigate overfitting."
         },
         {
-          "heading": "Model Evaluation",
-          "paragraphs": [
-            "Cross-validation is a statistical technique used to evaluate the performance of a machine learning model. Cross-validation involves partitioning the data into subsets and training the model multiple times.",
-            "Overfitting occurs when a model learns the training data too well, including noise and outliers. Overfitting leads to poor generalization on unseen data.",
-            "The bias-variance tradeoff is a fundamental concept in machine learning. Bias refers to the error introduced by approximating a complex problem with a simple model. Variance refers to the sensitivity of the model to fluctuations in the training data.",
-            "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. Common regularization methods include L1 regularization and L2 regularization."
-          ]
+          "chapter": "Chapter 1 Introduction to Machine Learning",
+          "section": "1.3 Model Evaluation",
+          "subsection": null,
+          "paragraph": "The bias-variance tradeoff describes the balance between a model's ability to fit training data and its ability to generalize to new data. High bias leads to underfitting, while high variance leads to overfitting."
         }
       ]
     },
     {
-      "chapter_id": 3,
-      "chapter_title": "Transformer Models and Attention Mechanisms",
-      "sections": [
+      "page": 3,
+      "paragraphs": [
         {
-          "heading": "The Attention Mechanism",
-          "paragraphs": [
-            "The attention mechanism is a technique that allows neural networks to focus on relevant parts of the input sequence. The attention mechanism was originally proposed for machine translation tasks.",
-            "Self-attention is a variant of the attention mechanism where the input sequence attends to itself. Self-attention computes attention scores between all pairs of positions in a sequence.",
-            "Multi-head attention is an extension of self-attention that runs multiple attention operations in parallel. Multi-head attention allows the model to attend to information from different representation subspaces."
-          ]
+          "chapter": "Chapter 2 Natural Language Processing",
+          "section": "2.1 Introduction to NLP",
+          "subsection": null,
+          "paragraph": "Natural language processing is a subfield of artificial intelligence that focuses on the interaction between computers and human language. It enables machines to process and analyze large amounts of natural language data."
         },
         {
-          "heading": "The Transformer Architecture",
-          "paragraphs": [
-            "The transformer is a neural network architecture that relies entirely on attention mechanisms. The transformer was introduced in the paper Attention Is All You Need and has become the foundation for modern language models.",
-            "The encoder-decoder architecture is a common design pattern in sequence-to-sequence models. The encoder processes the input sequence and produces a context representation. The decoder generates the output sequence from the context representation.",
-            "Positional encoding is a technique used in transformers to inject information about the position of tokens in a sequence. Since transformers do not have recurrence, positional encoding provides the necessary ordering information.",
-            "A language model is a probabilistic model that assigns probabilities to sequences of words. Language models are fundamental to many natural language processing tasks including text generation, machine translation, and speech recognition."
-          ]
+          "chapter": "Chapter 2 Natural Language Processing",
+          "section": "2.1 Introduction to NLP",
+          "subsection": null,
+          "paragraph": "Applications of natural language processing include machine translation, sentiment analysis, and question answering systems. These applications require understanding both syntax and semantics."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "paragraphs": [
+        {
+          "chapter": "Chapter 2 Natural Language Processing",
+          "section": "2.2 Text Preprocessing",
+          "subsection": null,
+          "paragraph": "Tokenization is the process of splitting text into smaller units called tokens. These tokens may represent words, subwords, or characters depending on the tokenization strategy."
         },
         {
-          "heading": "Pre-trained Language Models",
-          "paragraphs": [
-            "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model developed by Google. BERT uses masked language modeling and next sentence prediction as pre-training objectives.",
-            "Transfer learning is a technique where a model trained on one task is reused as the starting point for a model on a different task. Transfer learning has been highly successful in natural language processing.",
-            "Fine-tuning is the process of taking a pre-trained model and training it further on a specific downstream task. Fine-tuning allows the model to adapt its learned representations to the target task.",
-            "Word embeddings are dense vector representations of words that capture semantic relationships. Popular word embedding methods include Word2Vec, GloVe, and FastText. Word embeddings map words to continuous vector spaces where semantically similar words are close together."
-          ]
+          "chapter": "Chapter 2 Natural Language Processing",
+          "section": "2.2 Text Preprocessing",
+          "subsection": null,
+          "paragraph": "Stop word removal eliminates common words such as 'the', 'is', and 'and' that carry little semantic meaning. This helps improve the performance of downstream natural language processing tasks."
+        },
+        {
+          "chapter": "Chapter 2 Natural Language Processing",
+          "section": "2.2 Text Preprocessing",
+          "subsection": null,
+          "paragraph": "Lemmatization reduces words to their base or dictionary form, allowing different inflected forms of a word to be treated as a single term. This is crucial for accurate term normalization."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "paragraphs": [
+        {
+          "chapter": "Chapter 3 Deep Learning",
+          "section": "3.1 Neural Networks",
+          "subsection": null,
+          "paragraph": "A neural network is a computational model composed of layers of interconnected nodes, often referred to as neurons. Each neuron applies a transformation to its input and passes the result to the next layer."
+        },
+        {
+          "chapter": "Chapter 3 Deep Learning",
+          "section": "3.1 Neural Networks",
+          "subsection": null,
+          "paragraph": "Deep learning refers to neural networks with multiple hidden layers. These models are capable of learning complex representations and have achieved state-of-the-art results in many domains."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "paragraphs": [
+        {
+          "chapter": "Chapter 3 Deep Learning",
+          "section": "3.2 Transformer Models",
+          "subsection": null,
+          "paragraph": "The transformer architecture relies on self-attention mechanisms to process input sequences. It allows models to capture long-range dependencies without relying on recurrent structures."
+        },
+        {
+          "chapter": "Chapter 3 Deep Learning",
+          "section": "3.2 Transformer Models",
+          "subsection": null,
+          "paragraph": "Self-attention computes relationships between all tokens in a sequence, enabling the model to focus on relevant parts of the input. This mechanism is fundamental to modern language models such as BERT and GPT."
         }
       ]
     }
