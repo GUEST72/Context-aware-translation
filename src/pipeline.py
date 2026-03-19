@@ -22,6 +22,7 @@ from src.term_extractor import TermExtractor
 from src.term_ranker import TermRanker
 from src.term_normalizer import TermNormalizer
 from src.alias_detector import AliasDetector
+from src.context_extractor import ContextExtractor
 from src.definition_extractor import DefinitionExtractor
 from src.translator import Translator
 from src.embedding_generator import EmbeddingGenerator
@@ -152,6 +153,7 @@ class Pipeline:
         # Step 9 – Assemble Terminology Memory
         # ------------------------------------------------------------------
         logger.info("[9/9] Assembling terminology memory …")
+        context_extractor = ContextExtractor()
 
         for canonical, info in normalized.items():
             # Pick the best confidence from the original surface forms
@@ -165,6 +167,14 @@ class Pipeline:
             aliases = alias_detector.get_aliases(canonical)
             translation = translator.translate_term(canonical)
             embedding = embeddings.get(canonical, [])
+            example_sentences = context_extractor.extract_examples(
+                canonical_term=canonical,
+                surface_forms=info.get("surface_forms", []),
+                source_locations=info.get("source_locations", []),
+                segments=segments,
+                max_examples=2,
+            )
+            surface_form_variants = info.get("surface_form_variants", [])
 
             entry = TerminologyEntry(
                 term=canonical,
@@ -176,6 +186,8 @@ class Pipeline:
                 confidence=round(best_confidence, 4),
                 source_locations=info["source_locations"],
                 embedding=embedding,
+                example_sentences=example_sentences,
+                surface_form_variants=surface_form_variants,
             )
             self.memory.add_entry(entry)
 

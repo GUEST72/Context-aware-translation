@@ -75,6 +75,10 @@ class TermNormalizer:
                 'surface_forms': [str, ...],
                 'occurrences': int,
                 'source_locations': [dict, ...],
+                'surface_form_variants': [
+                    {'form': str, 'frequency': int, 'percentage': float},
+                    ...
+                ],
             }
         """
         logger.info("Normalizing candidate terms …")
@@ -90,6 +94,7 @@ class TermNormalizer:
                     "surface_forms": [],
                     "occurrences": 0,
                     "source_locations": [],
+                    "variant_frequencies": {},
                 }
 
             entry = merged[canonical]
@@ -97,10 +102,35 @@ class TermNormalizer:
                 entry["surface_forms"].append(cand.surface_form)
 
             entry["occurrences"] += cand.occurrences
+            entry["variant_frequencies"][cand.surface_form] = (
+                entry["variant_frequencies"].get(cand.surface_form, 0)
+                + cand.occurrences
+            )
 
             for loc in cand.source_locations:
                 if loc not in entry["source_locations"]:
                     entry["source_locations"].append(loc)
+
+        for entry in merged.values():
+            variant_frequencies = entry.pop("variant_frequencies", {})
+            total = sum(variant_frequencies.values())
+            variants = []
+
+            for form, freq in sorted(
+                variant_frequencies.items(),
+                key=lambda item: item[1],
+                reverse=True,
+            ):
+                percentage = round((freq / total) * 100, 1) if total > 0 else 0.0
+                variants.append(
+                    {
+                        "form": form,
+                        "frequency": freq,
+                        "percentage": percentage,
+                    }
+                )
+
+            entry["surface_form_variants"] = variants
 
         logger.info(
             f"Normalized {len(candidates)} surface forms → "
