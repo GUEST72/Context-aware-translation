@@ -46,6 +46,8 @@ class PipelineConfig:
         include_embeddings_in_output: bool = True,
         embedding_model: str = "all-MiniLM-L6-v2",
         lazy_embeddings: bool = False,
+        term_importance_weight: float = 0.7,
+        context_score_weight: float = 0.3,
     ):
         self.input_path = input_path
         self.output_path = output_path
@@ -57,6 +59,14 @@ class PipelineConfig:
         self.include_embeddings_in_output = include_embeddings_in_output
         self.embedding_model = embedding_model
         self.lazy_embeddings = lazy_embeddings
+        total_weight = term_importance_weight + context_score_weight
+        if total_weight <= 0:
+            self.term_importance_weight = 0.7
+            self.context_score_weight = 0.3
+        else:
+            # Normalize weights so they are stable even if user inputs arbitrary values.
+            self.term_importance_weight = term_importance_weight / total_weight
+            self.context_score_weight = context_score_weight / total_weight
 
 
 class Pipeline:
@@ -184,6 +194,16 @@ class Pipeline:
                 "supporting_example_sentences", []
             )
             example_score_breakdown = example_data.get("example_score_breakdown", {})
+            context_final_score = float(example_score_breakdown.get("final_score", 0.0))
+            hybrid_rank_score = (
+                self.config.term_importance_weight * best_confidence
+                + self.config.context_score_weight * context_final_score
+            )
+            example_score_breakdown["term_importance_score"] = round(best_confidence, 4)
+            example_score_breakdown["context_final_score"] = round(context_final_score, 4)
+            example_score_breakdown["term_rank_score"] = round(hybrid_rank_score, 4)
+            example_score_breakdown["term_importance_weight"] = round(self.config.term_importance_weight, 4)
+            example_score_breakdown["context_score_weight"] = round(self.config.context_score_weight, 4)
             surface_form_variants = info.get("surface_form_variants", [])
 
             entry = TerminologyEntry(
@@ -193,7 +213,7 @@ class Pipeline:
                 definition=definition,
                 aliases=aliases,
                 frequency=info["occurrences"],
-                confidence=round(best_confidence, 4),
+                confidence=round(hybrid_rank_score, 4),
                 source_locations=info["source_locations"],
                 embedding=embedding,
                 example_sentences=example_sentences,

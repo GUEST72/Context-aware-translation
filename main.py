@@ -86,6 +86,18 @@ def parse_args() -> argparse.Namespace:
         help="SentenceTransformers model name for embeddings.",
     )
     parser.add_argument(
+        "--term-importance-weight",
+        type=float,
+        default=0.7,
+        help="Weight for base term importance score in final ranking (default: 0.7).",
+    )
+    parser.add_argument(
+        "--context-score-weight",
+        type=float,
+        default=0.3,
+        help="Weight for context final score in final ranking (default: 0.3).",
+    )
+    parser.add_argument(
         "--log-level",
         type=str,
         default="INFO",
@@ -109,6 +121,8 @@ def main() -> None:
         include_embeddings_in_output=not args.no_include_embeddings,
         embedding_model=args.embedding_model,
         lazy_embeddings=args.lazy_embed,
+        term_importance_weight=args.term_importance_weight,
+        context_score_weight=args.context_score_weight,
     )
 
     pipeline = Pipeline(config)
@@ -134,7 +148,7 @@ def main() -> None:
     print(f"  Total terms:   {len(memory)}")
     print(f"  Output file:   {config.output_path}")
     print()
-    print("  Top 15 terms by confidence:")
+    print("  Top 15 terms by final ranking score:")
     print("  " + "-" * 50)
     sorted_entries = sorted(
         memory.entries.values(), key=lambda e: e.confidence, reverse=True

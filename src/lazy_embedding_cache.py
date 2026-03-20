@@ -96,6 +96,13 @@ class LazyEmbeddingCache:
         except Exception as e:
             logger.warning(f"Failed to save embedding cache: {e}")
 
+    @staticmethod
+    def _to_list_vector(value) -> List[float]:
+        """Convert an embedding object to a plain Python list safely."""
+        if hasattr(value, "tolist"):
+            return value.tolist()
+        return list(value)
+
     def get_embedding(self, text: str) -> Optional[List[float]]:
         """
         Get embedding for text, computing on-demand if needed.
@@ -115,7 +122,8 @@ class LazyEmbeddingCache:
 
         # Compute embedding
         try:
-            embedding = _embedding_model.encode(text, convert_to_numpy=False).tolist()
+            raw_embedding = _embedding_model.encode(text, convert_to_numpy=False)
+            embedding = self._to_list_vector(raw_embedding)
             self._in_memory_cache[text] = embedding
             logger.debug(f"Computed embedding: {text[:50]}… (cache size now: {len(self._in_memory_cache)})")
             return embedding
@@ -148,7 +156,11 @@ class LazyEmbeddingCache:
 
         # Batch compute
         try:
-            embeddings = _embedding_model.encode(texts_to_compute, convert_to_numpy=False).tolist()
+            raw_embeddings = _embedding_model.encode(texts_to_compute, convert_to_numpy=False)
+            if hasattr(raw_embeddings, "tolist"):
+                embeddings = raw_embeddings.tolist()
+            else:
+                embeddings = [self._to_list_vector(item) for item in raw_embeddings]
             for idx, embedding in enumerate(embeddings):
                 text = text_indices[idx]
                 results[text] = embedding
