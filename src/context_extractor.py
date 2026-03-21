@@ -8,7 +8,7 @@ Responsible for:
 """
 
 import re
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set
 
 from rank_bm25 import BM25Okapi
 from spacy.lang.en.stop_words import STOP_WORDS
@@ -19,6 +19,8 @@ class ContextExtractor:
 
     _SENTENCE_SPLIT_PATTERN = re.compile(r"(?<=[.!?])\s+")
     _WORD_PATTERN = re.compile(r"[A-Za-z][A-Za-z\-']+")
+    _YEAR_PATTERN = re.compile(r"\b(19|20)\d{2}\b")
+    _ENUMERATION_PATTERN = re.compile(r"^\s*\d+(?:\.\d+){1,}\b")
 
     # Definitional patterns used in terminology and summarization literature.
     _DEFINITION_PATTERNS = (
@@ -93,6 +95,7 @@ class ContextExtractor:
     ) -> List[str]:
         """Collect unique candidate sentences from all matched source segments."""
         candidates: List[str] = []
+        seen: Set[str] = set()
 
         for location in source_locations:
             text = self._find_segment_text(segments, location)
@@ -104,8 +107,13 @@ class ContextExtractor:
                 if sentence.strip()
             ]
             for sentence in sentences:
-                if sentence not in candidates:
-                    candidates.append(sentence)
+                lowered = sentence.lower()
+                if lowered in seen:
+                    continue
+                if self._is_noise_sentence(sentence):
+                    continue
+                seen.add(lowered)
+                candidates.append(sentence)
 
         return candidates
 
@@ -116,8 +124,8 @@ class ContextExtractor:
         candidate_sentences: List[str],
     ) -> List[Dict[str, Any]]:
         """Score candidates with weighted translation-utility objective using BM25."""
-        term_candidates = [canonical_term] + surface_forms
-        query_text = f"{canonical_term} translation context definition technical meaning"
+        term_candidates = [t.strip() for t in [canonical_term] + surface_forms if t and t.strip()]
+        query_text = " ".join(term_candidates[:6]) + " definition technical meaning protocol context"
 
         # Tokenize query and sentences for BM25
         def tokenize(text: str) -> List[str]:
@@ -130,24 +138,52 @@ class ContextExtractor:
         query_tokens = tokenize(query_text)
         corpus_tokens = [tokenize(sentence) for sentence in candidate_sentences]
 
+        # Guard BM25 against empty-token documents. rank_bm25 can raise
+        # ZeroDivisionError when every document token list is empty.
+        placeholder_token = "__empty__"
+        safe_corpus_tokens = [
+            tokens if tokens else [placeholder_token] for tokens in corpus_tokens
+        ]
+        safe_query_tokens = query_tokens if query_tokens else [placeholder_token]
+
         # Build BM25 index
-        bm25 = BM25Okapi(corpus_tokens)
-        semantic_scores = bm25.get_scores(query_tokens)
+        bm25 = BM25Okapi(safe_corpus_tokens)
+        semantic_raw_scores = [float(score) for score in bm25.get_scores(safe_query_tokens)]
+        max_semantic = max(semantic_raw_scores) if semantic_raw_scores else 0.0
+        min_semantic = min(semantic_raw_scores) if semantic_raw_scores else 0.0
+
+        def normalize_semantic(value: float) -> float:
+            if max_semantic <= min_semantic:
+                return 0.0
+            return (value - min_semantic) / (max_semantic - min_semantic)
 
         scored: List[Dict[str, Any]] = []
         for idx, sentence in enumerate(candidate_sentences):
             exact = self._exact_match_score(sentence, term_candidates)
-            semantic = float(semantic_scores[idx])
+            semantic_raw = semantic_raw_scores[idx]
+            semantic = normalize_semantic(semantic_raw)
             definitional = self._definitional_score(sentence, term_candidates)
+            term_anchor = self._term_anchor_score(sentence, term_candidates)
             salience = self._domain_salience_score(sentence)
             quality = self._sentence_quality_score(sentence)
 
+            # Prefer term-grounded explanatory sentences over generic context lines.
+            term_grounding = 1.0 if exact > 0 else 0.0
+            relevance_boost = 0.0
+            if exact > 0 and definitional > 0:
+                relevance_boost = 0.1
+            elif exact == 0 and definitional == 0:
+                relevance_boost = -0.08
+
             final_score = (
-                0.30 * exact
-                + 0.25 * semantic
+                0.36 * exact
+                + 0.18 * semantic
                 + 0.20 * definitional
-                + 0.15 * salience
-                + 0.10 * quality
+                + 0.10 * term_anchor
+                + 0.10 * salience
+                + 0.08 * quality
+                + 0.02 * term_grounding
+                + relevance_boost
             )
 
             scored.append(
@@ -155,11 +191,14 @@ class ContextExtractor:
                     "sentence": sentence,
                     "exact": exact,
                     "semantic": semantic,
+                    "sentence_tokens": set(tokenize(sentence)),
                     "final_score": float(round(final_score, 4)),
                     "breakdown": {
                         "exact_match_score": round(exact, 4),
                         "semantic_similarity_score": round(semantic, 4),
+                        "semantic_similarity_raw": round(semantic_raw, 4),
                         "definitional_score": round(definitional, 4),
+                        "term_anchor_score": round(term_anchor, 4),
                         "domain_salience_score": round(salience, 4),
                         "sentence_quality_score": round(quality, 4),
                         "final_score": float(round(final_score, 4)),
@@ -170,22 +209,39 @@ class ContextExtractor:
         # Prefer sentences that either explicitly mention the term or are semantically close.
         relevant = [
             item for item in scored
-            if item["exact"] > 0.0 or item["semantic"] >= 0.05
+            if item["exact"] > 0.0 or item["breakdown"].get("definitional_score", 0.0) > 0.0
         ]
+        if not relevant:
+            relevant = [
+                item for item in scored
+                if item["exact"] > 0.0 or item["semantic"] >= 0.25
+            ]
         if relevant:
             scored = relevant
 
-        scored.sort(key=lambda item: item["final_score"], reverse=True)
+        scored.sort(
+            key=lambda item: (
+                item["exact"] > 0.0,
+                item["breakdown"]["definitional_score"] > 0.0,
+                item["final_score"],
+            ),
+            reverse=True,
+        )
         return scored
 
     def _select_with_mmr(self, scored: List[Dict[str, Any]], max_examples: int) -> List[int]:
-        """Select sentences using MMR for relevance + diversity (score-based similarity)."""
+        """Select sentences using MMR for relevance + diversity (token overlap similarity)."""
         if not scored:
             return []
         if len(scored) <= max_examples:
             return list(range(len(scored)))
 
-        selected = [0]
+        primary_candidates = [
+            idx
+            for idx, item in enumerate(scored)
+            if item["exact"] > 0.0 and item["breakdown"].get("sentence_quality_score", 0.0) >= 0.6
+        ]
+        selected = [primary_candidates[0] if primary_candidates else 0]
         while len(selected) < max_examples:
             best_idx = None
             best_mmr = -1.0
@@ -195,15 +251,12 @@ class ContextExtractor:
                     continue
 
                 relevance = scored[idx]["final_score"]
-                candidate_semantic = scored[idx]["semantic"]
-
-                # Use semantic score difference as diversity proxy
-                # (dissimilar semantic scores = diverse content)
                 max_sim = 0.0
                 for selected_idx in selected:
-                    selected_semantic = scored[selected_idx]["semantic"]
-                    # Normalize to [0,1] range
-                    sim = abs(candidate_semantic - selected_semantic)
+                    sim = self._sentence_similarity(
+                        scored[idx].get("sentence_tokens", set()),
+                        scored[selected_idx].get("sentence_tokens", set()),
+                    )
                     if sim > max_sim:
                         max_sim = sim
 
@@ -217,6 +270,16 @@ class ContextExtractor:
             selected.append(best_idx)
 
         return selected
+
+    def _sentence_similarity(self, a_tokens: Set[str], b_tokens: Set[str]) -> float:
+        """Jaccard token overlap in [0,1], where higher means more redundant."""
+        if not a_tokens or not b_tokens:
+            return 0.0
+        inter = len(a_tokens & b_tokens)
+        union = len(a_tokens | b_tokens)
+        if union == 0:
+            return 0.0
+        return inter / union
 
     def _find_segment_text(self, segments, location: Dict[str, Any]) -> str:
         """Find segment text that matches a source location."""
@@ -263,6 +326,21 @@ class ContextExtractor:
             return 0.7
         return 0.0
 
+    def _term_anchor_score(self, sentence: str, terms: List[str]) -> float:
+        """Favor sentences where the term appears in explanatory local context."""
+        lowered = sentence.lower()
+        valid_terms = [term.lower().strip() for term in terms if term and term.strip()]
+        if not valid_terms:
+            return 0.0
+
+        for term in valid_terms:
+            term_re = re.escape(term)
+            if re.search(rf"\b{term_re}\b\s+(is|are|refers\s+to|means|defined\s+as)", lowered):
+                return 1.0
+            if re.search(rf"\b{term_re}\b", lowered):
+                return 0.6
+        return 0.0
+
     def _domain_salience_score(self, sentence: str) -> float:
         """Approximate informativeness by content-word density."""
         tokens = [token.lower() for token in self._WORD_PATTERN.findall(sentence)]
@@ -278,13 +356,62 @@ class ContextExtractor:
 
     def _sentence_quality_score(self, sentence: str) -> float:
         """Reward sentence length that is usually best for translation context."""
-        length = len(self._WORD_PATTERN.findall(sentence))
+        tokens = self._WORD_PATTERN.findall(sentence)
+        length = len(tokens)
         if length == 0:
             return 0.0
-        if 10 <= length <= 30:
-            return 1.0
-        if 7 <= length <= 35:
-            return 0.7
-        if 5 <= length <= 40:
-            return 0.4
-        return 0.2
+
+        lowered = sentence.lower()
+        quality = 0.2
+        if 10 <= length <= 28:
+            quality = 1.0
+        elif 8 <= length <= 35:
+            quality = 0.75
+        elif 6 <= length <= 45:
+            quality = 0.5
+
+        if self._is_noise_sentence(sentence):
+            quality *= 0.2
+
+        if any(marker in lowered for marker in ("is a", "is an", "refers to", "defined as", "means")):
+            quality = min(1.0, quality + 0.2)
+
+        return round(quality, 4)
+
+    def _is_noise_sentence(self, sentence: str) -> bool:
+        """Detect index/citation/fragment sentences that are poor translation examples."""
+        stripped = sentence.strip()
+        lowered = stripped.lower()
+        tokens = self._WORD_PATTERN.findall(stripped)
+
+        if self._ENUMERATION_PATTERN.search(stripped):
+            return True
+
+        if len(tokens) < 6:
+            return True
+        if len(tokens) > 55:
+            return True
+
+        noisy_markers = (
+            "figure ", "chapter ", "section ", "rfc ", "http://", "https://", "usenix", "pp."
+        )
+        if any(marker in lowered for marker in noisy_markers):
+            return True
+
+        if stripped.count(";") >= 2 or stripped.count(",") >= 8:
+            return True
+
+        if self._YEAR_PATTERN.search(stripped) and len(tokens) < 12:
+            return True
+
+        meta_markers = (
+            "in this chapter", "in this section", "we will", "let's", "let us", "recall that"
+        )
+        if any(marker in lowered for marker in meta_markers):
+            return True
+
+        digit_ratio = sum(ch.isdigit() for ch in stripped) / max(len(stripped), 1)
+        if digit_ratio > 0.18:
+            return True
+
+        return False

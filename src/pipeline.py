@@ -15,6 +15,7 @@ Orchestrates:
 
 import logging
 import time
+import re
 from typing import List, Optional
 
 from src.text_loader import BookLoader
@@ -41,9 +42,12 @@ class PipelineConfig:
         output_path: str = "data/terminology_memory.json",
         min_term_freq: int = 2,
         max_term_tokens: int = 5,
+        max_output_terms: int = 1500,
+        pre_normalization_multiplier: int = 8,
         enable_translation: bool = True,
         enable_embeddings: bool = True,
         include_embeddings_in_output: bool = True,
+        include_source_locations_in_output: bool = False,
         embedding_model: str = "all-MiniLM-L6-v2",
         lazy_embeddings: bool = False,
         term_importance_weight: float = 0.7,
@@ -53,10 +57,13 @@ class PipelineConfig:
         self.output_path = output_path
         self.min_term_freq = min_term_freq
         self.max_term_tokens = max_term_tokens
+        self.max_output_terms = max(1, int(max_output_terms))
+        self.pre_normalization_multiplier = max(1, int(pre_normalization_multiplier))
         self.enable_translation = enable_translation
         # In lazy mode, skip embeddings during pipeline (they're done on-demand later)
         self.enable_embeddings = enable_embeddings and not lazy_embeddings
         self.include_embeddings_in_output = include_embeddings_in_output
+        self.include_source_locations_in_output = include_source_locations_in_output
         self.embedding_model = embedding_model
         self.lazy_embeddings = lazy_embeddings
         total_weight = term_importance_weight + context_score_weight
@@ -83,6 +90,49 @@ class Pipeline:
         self.config = config or PipelineConfig()
         self.memory = TerminologyMemory()
 
+    _GENERIC_NON_TERMS = {
+        "figure",
+        "figures",
+        "section",
+        "sections",
+        "chapter",
+        "chapters",
+        "example",
+        "examples",
+        "order",
+        "problem",
+        "in order",
+        "for example",
+    }
+    _REPEATED_TOKEN_PATTERN = re.compile(r"^([a-z]{1,3})(?:\s+\1){2,}$")
+
+    @classmethod
+    def _is_noise_term(cls, term: str) -> bool:
+        """Return True when term is likely formatting or generic narrative noise."""
+        t = term.lower().strip()
+        if not t:
+            return True
+        if t in cls._GENERIC_NON_TERMS:
+            return True
+        if cls._REPEATED_TOKEN_PATTERN.match(t):
+            return True
+
+        tokens = t.split()
+        if not tokens:
+            return True
+
+        # Drop phrases dominated by very short alphabetic fragments.
+        short_alpha = [tok for tok in tokens if tok.isalpha() and len(tok) <= 2]
+        if len(short_alpha) >= max(2, len(tokens) - 1):
+            return True
+
+        # Exclude leading discourse phrases rather than domain terms.
+        leading_noise = {"the", "a", "an", "in", "for", "to", "of"}
+        if len(tokens) >= 2 and tokens[0] in leading_noise:
+            return True
+
+        return False
+
     def run(self) -> TerminologyMemory:
         """Execute the full pipeline and return the populated TerminologyMemory."""
         start = time.time()
@@ -97,7 +147,8 @@ class Pipeline:
         loader = BookLoader(self.config.input_path).load()
         segments = loader.get_segments()
         self.memory.book_title = loader.get_book_title()
-        logger.info(f"      Book: '{self.memory.book_title}' — {len(segments)} segments")
+        book_label = self.memory.book_title or "(no title provided)"
+        logger.info(f"      Book: '{book_label}' — {len(segments)} segments")
 
         # ------------------------------------------------------------------
         # Step 2 – Extract candidate terms
@@ -117,12 +168,74 @@ class Pipeline:
         ranker = TermRanker()
         confidence_scores = ranker.compute_scores(candidates, segments)
 
+        # Reduce noise and runtime by keeping only top-ranked candidate surface forms.
+        max_pre_normalization = self.config.max_output_terms * self.config.pre_normalization_multiplier
+        if len(candidates) > max_pre_normalization:
+            ranked_keys = sorted(
+                candidates.keys(),
+                key=lambda key: (
+                    confidence_scores.get(key, 0.0),
+                    candidates[key].occurrences,
+                ),
+                reverse=True,
+            )
+            keep_keys = set(ranked_keys[:max_pre_normalization])
+            candidates = {
+                key: cand for key, cand in candidates.items() if key in keep_keys
+            }
+            logger.info(
+                "      Pre-normalization limit: %s -> top %s candidates",
+                len(ranked_keys),
+                len(candidates),
+            )
+
         # ------------------------------------------------------------------
         # Step 4 – Normalize terms
         # ------------------------------------------------------------------
         logger.info("[4/9] Normalizing terms …")
         normalizer = TermNormalizer()
         normalized = normalizer.normalize_candidates(candidates)
+
+        # Keep only top normalized terms by best candidate confidence to reduce noise.
+        if len(normalized) > self.config.max_output_terms:
+            logger.info(
+                "      Limiting normalized terms: %s -> top %s by rank",
+                len(normalized),
+                self.config.max_output_terms,
+            )
+
+            def _best_confidence(item):
+                _, info = item
+                best = 0.0
+                for sf in info.get("surface_forms", []):
+                    if sf in confidence_scores:
+                        best = max(best, confidence_scores[sf])
+                return best
+
+            ranked_normalized = sorted(
+                normalized.items(),
+                key=_best_confidence,
+                reverse=True,
+            )
+            selected = []
+            for item in ranked_normalized:
+                canonical, _ = item
+                if self._is_noise_term(canonical):
+                    continue
+                selected.append(item)
+                if len(selected) >= self.config.max_output_terms:
+                    break
+
+            # Fallback: keep best available terms even if many are filtered.
+            if len(selected) < self.config.max_output_terms:
+                for item in ranked_normalized:
+                    if item in selected:
+                        continue
+                    selected.append(item)
+                    if len(selected) >= self.config.max_output_terms:
+                        break
+
+            normalized = dict(selected)
 
         # ------------------------------------------------------------------
         # Step 5 – Detect aliases
@@ -177,7 +290,14 @@ class Pipeline:
                     best_confidence = max(best_confidence, confidence_scores[sf])
 
             # Retrieve ancillary data
-            definition = def_extractor.get_definition(canonical)
+            definition_candidates = def_extractor.get_definitions(
+                canonical,
+                surface_forms=info.get("surface_forms", []),
+                source_locations=info.get("source_locations", []),
+                segments=segments,
+                max_definitions=3,
+            )
+            definition = definition_candidates[0] if definition_candidates else None
             aliases = alias_detector.get_aliases(canonical)
             translation = translator.translate_term(canonical)
             embedding = embeddings.get(canonical, [])
@@ -211,6 +331,7 @@ class Pipeline:
                 normalized_term=canonical,
                 translation_ar=translation,
                 definition=definition,
+                definition_candidates=definition_candidates,
                 aliases=aliases,
                 frequency=info["occurrences"],
                 confidence=round(hybrid_rank_score, 4),
@@ -230,6 +351,7 @@ class Pipeline:
         self.memory.save_json(
             self.config.output_path,
             include_embeddings=self.config.include_embeddings_in_output,
+            include_source_locations=self.config.include_source_locations_in_output,
         )
 
         elapsed = time.time() - start

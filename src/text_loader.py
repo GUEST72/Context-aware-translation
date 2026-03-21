@@ -9,6 +9,7 @@ Responsible for:
 
 import json
 import logging
+import re
 from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
@@ -54,9 +55,13 @@ class BookLoader:
     Extracts paragraphs as TextSegment objects with source metadata.
     """
 
-    REQUIRED_BOOK_KEYS = {"book_title", "pages"}
+    REQUIRED_BOOK_KEYS = {"pages"}
     REQUIRED_PAGE_KEYS = {"page", "paragraphs"}
     REQUIRED_PARAGRAPH_KEYS = {"chapter", "section", "paragraph"}
+    _STRUCTURAL_PARAGRAPH_PATTERN = re.compile(
+        r"^\s*(chapter|chapters|section|sections|appendix|appendices|references|review\s+questions|exercises|summary)\b(?:\s+\d+[\d\.-]*)?",
+        re.IGNORECASE,
+    )
 
     def __init__(self, filepath: str):
         self.filepath = filepath
@@ -80,10 +85,11 @@ class BookLoader:
         self._validate_structure()
         if self.book_data is None:
             raise ValueError("Book data is empty after loading.")
-        self.book_title = self.book_data.get("book_title", "Unknown")
+        self.book_title = str(self.book_data.get("book_title", "")).strip()
         self._extract_segments()
+        book_label = self.book_title or "(no title provided)"
         logger.info(
-            f"Loaded '{self.book_title}' with {len(self.segments)} text segments"
+            f"Loaded '{book_label}' with {len(self.segments)} text segments"
         )
         return self
 
@@ -179,6 +185,15 @@ class BookLoader:
                 if not isinstance(paragraph_text, str) or not paragraph_text.strip():
                     continue
 
+                paragraph_text = paragraph_text.strip()
+                if self._is_structural_paragraph(paragraph_text):
+                    logger.debug(
+                        "Skipping structural heading paragraph on page %s: '%s'",
+                        page_number,
+                        paragraph_text[:80],
+                    )
+                    continue
+
                 if chapter_title not in chapter_id_map:
                     chapter_id_map[chapter_title] = next_chapter_id
                     next_chapter_id += 1
@@ -201,6 +216,10 @@ class BookLoader:
                     )
                 )
 
+    def _is_structural_paragraph(self, text: str) -> bool:
+        """Return True for heading-only structural lines like 'Chapter ...' or 'Section ...'."""
+        return bool(self._STRUCTURAL_PARAGRAPH_PATTERN.match(text))
+
     def get_all_text(self) -> str:
         """Return all paragraph text concatenated (for corpus-level analysis)."""
         return " ".join(seg.text for seg in self.segments)
@@ -210,5 +229,5 @@ class BookLoader:
         return self.segments
 
     def get_book_title(self) -> str:
-        """Return the book title."""
+        """Return the book title, or an empty string if not provided."""
         return self.book_title

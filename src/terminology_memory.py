@@ -23,6 +23,7 @@ class TerminologyEntry:
     normalized_term: str
     translation_ar: Optional[str] = None
     definition: Optional[str] = None
+    definition_candidates: List[str] = field(default_factory=list)
     aliases: List[str] = field(default_factory=list)
     frequency: int = 0
     confidence: float = 0.0
@@ -34,11 +35,17 @@ class TerminologyEntry:
     example_score_breakdown: Dict[str, Any] = field(default_factory=dict)
     surface_form_variants: List[Dict[str, Any]] = field(default_factory=list)
 
-    def to_dict(self, include_embedding: bool = True) -> Dict[str, Any]:
+    def to_dict(
+        self,
+        include_embedding: bool = True,
+        include_source_locations: bool = False,
+    ) -> Dict[str, Any]:
         """Convert to a plain dictionary for JSON serialization."""
         d = asdict(self)
         if not include_embedding:
             d["embedding"] = []
+        if not include_source_locations:
+            d.pop("source_locations", None)
         return d
 
 
@@ -75,6 +82,13 @@ class TerminologyMemory:
             # Keep first non-null definition
             if existing.definition is None and entry.definition is not None:
                 existing.definition = entry.definition
+            # Merge multiple definition candidates (preserve order, keep concise)
+            for definition in entry.definition_candidates:
+                if definition and definition not in existing.definition_candidates:
+                    existing.definition_candidates.append(definition)
+            if existing.definition and existing.definition not in existing.definition_candidates:
+                existing.definition_candidates.insert(0, existing.definition)
+            existing.definition_candidates = existing.definition_candidates[:5]
             # Keep first non-null translation
             if existing.translation_ar is None and entry.translation_ar is not None:
                 existing.translation_ar = entry.translation_ar
@@ -135,13 +149,20 @@ class TerminologyMemory:
             )
         return results
 
-    def to_dict(self, include_embeddings: bool = True) -> Dict[str, Any]:
+    def to_dict(
+        self,
+        include_embeddings: bool = True,
+        include_source_locations: bool = False,
+    ) -> Dict[str, Any]:
         """Serialize the entire memory to a dictionary."""
         return {
             "book_title": self.book_title,
             "total_terms": len(self.entries),
             "terminologies": [
-                entry.to_dict(include_embedding=include_embeddings)
+                entry.to_dict(
+                    include_embedding=include_embeddings,
+                    include_source_locations=include_source_locations,
+                )
                 for entry in sorted(
                     self.entries.values(),
                     key=lambda e: e.confidence,
@@ -154,10 +175,14 @@ class TerminologyMemory:
         self,
         filepath: str,
         include_embeddings: bool = True,
+        include_source_locations: bool = False,
         indent: int = 2,
     ) -> None:
         """Save the terminology memory to a JSON file."""
-        data = self.to_dict(include_embeddings=include_embeddings)
+        data = self.to_dict(
+            include_embeddings=include_embeddings,
+            include_source_locations=include_source_locations,
+        )
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=indent)
         logger.info(
@@ -179,6 +204,7 @@ class TerminologyMemory:
                 normalized_term=item.get("normalized_term", ""),
                 translation_ar=item.get("translation_ar"),
                 definition=item.get("definition"),
+                definition_candidates=item.get("definition_candidates", []),
                 aliases=item.get("aliases", []),
                 frequency=item.get("frequency", 0),
                 confidence=item.get("confidence", 0.0),

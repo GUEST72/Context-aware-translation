@@ -60,6 +60,18 @@ def parse_args() -> argparse.Namespace:
         help="Maximum tokens per term phrase (default: 5).",
     )
     parser.add_argument(
+        "--max-terms",
+        type=int,
+        default=1500,
+        help="Maximum number of final normalized terms to keep (default: 1500).",
+    )
+    parser.add_argument(
+        "--pre-normalization-multiplier",
+        type=int,
+        default=8,
+        help="Keep up to max_terms * multiplier candidates before normalization (default: 8).",
+    )
+    parser.add_argument(
         "--no-translate",
         action="store_true",
         help="Disable Arabic translation.",
@@ -78,6 +90,11 @@ def parse_args() -> argparse.Namespace:
         "--no-include-embeddings",
         action="store_true",
         help="Exclude embedding vectors from the output JSON (they are included by default).",
+    )
+    parser.add_argument(
+        "--include-source-locations",
+        action="store_true",
+        help="Include source_locations in output JSON (excluded by default to reduce file size/noise).",
     )
     parser.add_argument(
         "--embedding-model",
@@ -116,9 +133,12 @@ def main() -> None:
         output_path=args.output,
         min_term_freq=args.min_freq,
         max_term_tokens=args.max_tokens,
+        max_output_terms=args.max_terms,
+        pre_normalization_multiplier=args.pre_normalization_multiplier,
         enable_translation=not args.no_translate,
         enable_embeddings=not args.no_embed,
         include_embeddings_in_output=not args.no_include_embeddings,
+        include_source_locations_in_output=args.include_source_locations,
         embedding_model=args.embedding_model,
         lazy_embeddings=args.lazy_embed,
         term_importance_weight=args.term_importance_weight,
@@ -144,7 +164,8 @@ def main() -> None:
     print("\n" + "=" * 60)
     print("  TERMINOLOGY MEMORY — SUMMARY")
     print("=" * 60)
-    print(f"  Book:          {memory.book_title}")
+    book_label = memory.book_title or "(no title provided)"
+    print(f"  Book:          {book_label}")
     print(f"  Total terms:   {len(memory)}")
     print(f"  Output file:   {config.output_path}")
     print()
