@@ -10,7 +10,7 @@ Responsible for:
 
 import re
 import logging
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import spacy
 
@@ -46,10 +46,24 @@ class TermNormalizer:
             3. Lemmatize each token
             4. Collapse whitespace
         """
-        text = term.lower().strip()
-        text = re.sub(r"^[^\w]+|[^\w]+$", "", text)
+        text = self._clean_term_text(term)
+        if not text:
+            return ""
 
         doc = nlp(text)
+        return self._normalize_doc(doc)
+
+    @staticmethod
+    def _clean_term_text(term: str) -> str:
+        """Lowercase and remove leading/trailing punctuation artifacts."""
+        text = term.lower().strip()
+        text = re.sub(r"^[^\w]+|[^\w]+$", "", text)
+        text = re.sub(r"\s{2,}", " ", text)
+        return text
+
+    @staticmethod
+    def _normalize_doc(doc) -> str:
+        """Convert a spaCy Doc to canonical lemma-based term text."""
         lemmas = []
         for token in doc:
             if token.is_punct or token.is_space:
@@ -84,8 +98,26 @@ class TermNormalizer:
         logger.info("Normalizing candidate terms …")
         merged: Dict[str, Dict] = {}
 
+        # Batch-normalize candidate surface forms for a large speed boost.
+        normalized_by_surface: Dict[str, str] = {}
+        surfaces: List[str] = list(candidates.keys())
+        cleaned_surfaces: List[str] = [self._clean_term_text(surface) for surface in surfaces]
+
+        for surface, cleaned in zip(surfaces, cleaned_surfaces):
+            if not cleaned:
+                normalized_by_surface[surface] = ""
+
+        non_empty_surfaces = [surface for surface, cleaned in zip(surfaces, cleaned_surfaces) if cleaned]
+        non_empty_cleaned = [cleaned for cleaned in cleaned_surfaces if cleaned]
+
+        for surface, doc in zip(
+            non_empty_surfaces,
+            nlp.pipe(non_empty_cleaned, batch_size=2048),
+        ):
+            normalized_by_surface[surface] = self._normalize_doc(doc)
+
         for key, cand in candidates.items():
-            canonical = self.normalize(cand.surface_form)
+            canonical = normalized_by_surface.get(cand.surface_form, "")
             if not canonical:
                 continue
 
