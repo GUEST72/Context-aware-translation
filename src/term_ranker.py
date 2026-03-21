@@ -44,9 +44,8 @@ class TermRanker:
         """
         logger.info("Computing term ranking scores …")
 
-        # Build per-segment texts for document-frequency calculation
-        doc_texts: List[str] = [seg.text.lower() for seg in segments]
-        self.corpus_size = len(doc_texts)
+        # Use segment count as corpus size; DF is derived from source locations.
+        self.corpus_size = len(segments)
 
         if self.corpus_size == 0:
             logger.warning("No segments provided for ranking.")
@@ -61,8 +60,16 @@ class TermRanker:
             self.term_freq[key] = cand.occurrences
 
         # --- Document Frequency --------------------------------------------
-        for key in candidates:
-            df = sum(1 for doc in doc_texts if key in doc)
+        # Large speedup: DF is the number of unique segments where the candidate appears,
+        # computed directly from extraction metadata rather than O(terms * documents)
+        # substring scans.
+        for key, cand in candidates.items():
+            segment_ids = {
+                loc.get("segment_index")
+                for loc in cand.source_locations
+                if isinstance(loc.get("segment_index"), int)
+            }
+            df = len(segment_ids)
             self.document_freq[key] = max(df, 1)
 
         # --- TF-IDF --------------------------------------------------------
