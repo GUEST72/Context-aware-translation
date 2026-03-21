@@ -125,6 +125,22 @@ class ContextExtractor:
     ) -> List[Dict[str, Any]]:
         """Score candidates with weighted translation-utility objective using BM25."""
         term_candidates = [t.strip() for t in [canonical_term] + surface_forms if t and t.strip()]
+
+        # Fast pre-filter: keep only strongest sentence candidates before BM25.
+        # This reduces per-term scoring cost substantially on large books.
+        max_pool_size = 12
+        if len(candidate_sentences) > max_pool_size:
+            quick_ranked = sorted(
+                candidate_sentences,
+                key=lambda sentence: (
+                    self._exact_match_score(sentence, term_candidates),
+                    self._definitional_score(sentence, term_candidates),
+                    self._sentence_quality_score(sentence),
+                ),
+                reverse=True,
+            )
+            candidate_sentences = quick_ranked[:max_pool_size]
+
         query_text = " ".join(term_candidates[:6]) + " definition technical meaning protocol context"
 
         # Tokenize query and sentences for BM25

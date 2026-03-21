@@ -119,11 +119,18 @@ class TermExtractor:
     def _extract_ngrams(self, doc, source: Dict) -> None:
         """Generate token n-grams (1 to max_tokens) and keep nominal ones."""
         tokens = [t for t in doc if not t.is_punct and not t.is_space]
+
+        # Prefix counts let us test "span has noun/proper noun" in O(1)
+        # instead of scanning each span token-by-token.
+        noun_prefix = [0] * (len(tokens) + 1)
+        for i, tok in enumerate(tokens):
+            noun_prefix[i + 1] = noun_prefix[i] + (1 if tok.pos_ in {"NOUN", "PROPN"} else 0)
+
         for n in range(1, self.max_tokens + 1):
             for i in range(len(tokens) - n + 1):
                 span = tokens[i : i + n]
                 # At least one token must be NOUN or PROPN
-                if not any(t.pos_ in {"NOUN", "PROPN"} for t in span):
+                if noun_prefix[i + n] - noun_prefix[i] == 0:
                     continue
                 term_text = " ".join(t.text for t in span).strip()
                 term_text = self._clean_text(term_text)
