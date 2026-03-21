@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 # Ensure the model is loaded once
 try:
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm", disable=["ner", "textcat"])
 except OSError:
     logger.error(
         "spaCy model 'en_core_web_sm' not found. "
@@ -87,10 +87,12 @@ class TermExtractor:
         Returns the merged candidate dictionary.
         """
         logger.info("Starting candidate term extraction …")
-        for seg_idx, seg in enumerate(segments):
+        texts = [seg.text for seg in segments]
+        for seg_idx, (seg, doc) in enumerate(
+            zip(segments, nlp.pipe(texts, batch_size=128))
+        ):
             source = seg.to_dict()
             source["segment_index"] = seg_idx
-            doc = nlp(seg.text)
 
             # Method 1: noun-phrase chunks
             self._extract_noun_phrases(doc, source)
