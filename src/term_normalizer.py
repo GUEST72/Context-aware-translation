@@ -17,7 +17,7 @@ import spacy
 logger = logging.getLogger(__name__)
 
 try:
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm", disable=["parser", "ner", "textcat"])
 except OSError:
     logger.error(
         "spaCy model 'en_core_web_sm' not found. "
