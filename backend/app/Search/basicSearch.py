@@ -36,7 +36,7 @@ def sentence_match(text1, text2):
 
 
 def search_for_text(book_Jason , text , page_number):
-    with open(book_Jason , mode="r") as read_file:
+    with open(book_Jason , mode="r", encoding="utf-8") as read_file:
         book_data = json.load(read_file)
 
     desired_page = None

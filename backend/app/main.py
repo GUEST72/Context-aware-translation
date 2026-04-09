@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 from fastapi import FastAPI
 import uvicorn
 from pydantic import BaseModel
@@ -7,9 +8,11 @@ from context.ContexBasicHandling import get_context
 from model.translator_pro import translate_function
 
 app = FastAPI(title="Context-Aware Translation API", description="Translate text with contextual awareness")
+BASE_DIR = Path(__file__).resolve().parent
+BOOK_PATH = BASE_DIR / "output.json"
 
 # 🔹 Load once (NOT per request)
-with open('./output.json', 'r') as f:
+with BOOK_PATH.open('r', encoding='utf-8') as f:
     BOOK_DATA = json.load(f)
 
 class Translate_Req(BaseModel):
@@ -33,7 +36,7 @@ def translate(text_to_trans: Translate_Req):
     page_number = text_to_trans.page_number
     text = text.replace("\n", " ")
     searched_text = search_for_text(
-        book_Jason='./output.json',
+        book_Jason=str(BOOK_PATH),
         text=text,
         page_number=page_number
     )
