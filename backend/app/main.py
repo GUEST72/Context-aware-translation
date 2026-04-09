@@ -4,11 +4,12 @@ import uvicorn
 from pydantic import BaseModel
 from Search.basicSearch import search_for_text
 from context.ContexBasicHandling import get_context
+from model.translator_pro import translate_function
 
-app = FastAPI()
+app = FastAPI(title="Context-Aware Translation API", description="Translate text with contextual awareness")
 
 # 🔹 Load once (NOT per request)
-with open('/home/ahmed-walled/Projects/Context-Aware-Translation/backend/app/output.json', 'r') as f:
+with open('./output.json', 'r') as f:
     BOOK_DATA = json.load(f)
 
 class Translate_Req(BaseModel):
@@ -16,14 +17,23 @@ class Translate_Req(BaseModel):
     page_number: int
 
 
+@app.get("/")
+def root():
+    """Health check and welcome endpoint"""
+    return {
+        "message": "Context-Aware Translation API",
+        "status": "running",
+        "docs": "/docs"
+    }
+
+
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
     text = text_to_trans.text
     page_number = text_to_trans.page_number
     text = text.replace("\n", " ")
-    print(text)
     searched_text = search_for_text(
-        book_Jason='/home/ahmed-walled/Projects/Context-Aware-Translation/backend/app/output.json',
+        book_Jason='./output.json',
         text=text,
         page_number=page_number
     )
@@ -31,12 +41,12 @@ def translate(text_to_trans: Translate_Req):
     if searched_text is None:
         return {"error": "Text not found"}
     context_paragraph , target_text = get_context(search_output=searched_text ,book_obj=BOOK_DATA,target_text=text )
+    translation = translate_function(target_text,context_paragraph)
 
     return {
-        "tatget_text": target_text,
-        "context_paragraph": context_paragraph,
-        "match_type": searched_text['match_type']
+        "translation": translation
     }
+    
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

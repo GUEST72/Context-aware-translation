@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Set, Tuple
 
 import requests
 from transformers import logging as transformers_logging
-from initial_model import ContextAwareTranslator
+from .initial_model import ContextAwareTranslator
 
 def get_local_fallback():
     transformers_logging.set_verbosity_error()
@@ -15,7 +15,7 @@ def get_local_fallback():
 class ContextualTranslator:
     _THINK_TAG_RE = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
     _TAGGED_TRANSLATION_RE = re.compile(r"<tr>(.*?)</tr>", re.DOTALL | re.IGNORECASE)
-    _LATIN_RE = re.compile(r"[A-Za-z]+")
+    # _LATIN_RE = re.compile(r"[A-Za-z]+")
     _DIACRITICS_RE = re.compile(r"[\u064B-\u0652]")
     _SENTENCE_SPLIT_RE = re.compile(r'([.،!؟])')
     _TRANSIENT_STATUSES = {408, 425, 429, 500, 502, 503, 504}
@@ -222,19 +222,20 @@ class ContextualTranslator:
         else:
             content = text
         content = self._DIACRITICS_RE.sub("", content)
-        content = self._LATIN_RE.sub("", content)        
+        # content = self._LATIN_RE.sub("", content)        
         content = re.sub(r"[^\u0600-\u06FF\s\d.,!؟؛،:()\-]+", "", content)
         return re.sub(r"\s+", " ", content).strip()
 
-def main():
+def translate_function(target_sentence, context_paragraph):
     parser = argparse.ArgumentParser()
     parser.add_argument("--context", type=str)
     parser.add_argument("--target", type=str)
     args = parser.parse_args()
-    ctx = args.context or input("Enter CONTEXT: ").strip()
-    tgt = args.target or input("Enter TARGET: ").strip()
+    ctx = context_paragraph or args.context or input("Enter CONTEXT: ").strip()
+    tgt = target_sentence or args.target or input("Enter TARGET SENTENCE: ").strip()
     if ctx and tgt:
         print(ContextualTranslator().translate(ctx, tgt)[0])
+        return ContextualTranslator().translate(ctx, tgt)[0]
 
 if __name__ == "__main__":
-    main()
+    translate_function() 
