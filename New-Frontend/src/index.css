@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Manrope", sans-serif;
+  
+  --color-surface: #0e0e10;
+  --color-surface-container-low: #131315;
+  --color-surface-container-high: #19191c;
+  --color-surface-container-highest: #262528;
+  --color-surface-bright: #2c2c2f;
+  
+  --color-primary: #99f7ff;
+  --color-primary-dim: #00e2ee;
+  --color-on-primary: #005f64;
+  
+  --color-secondary: #ac89ff;
+  --color-on-secondary: #290067;
+  
+  --color-on-surface: #e8e4e7;
+  --color-on-surface-variant: #adaaad;
+  
+  --color-outline-variant: #48474a;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.pdf-canvas {
+  background-image: radial-gradient(#262528 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glass-hud {
+  @apply backdrop-blur-xl bg-surface-container-highest/60;
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dim) 100%);
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #131315 25%, #19191c 50%, #131315 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

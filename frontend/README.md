@@ -1,16 +1,72 @@
-# React + Vite
+# Context-Aware Translation Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This frontend integrates the new UI design with the existing backend translation API.
 
-Currently, two official plugins are available:
+## Current Workflow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. User uploads a PDF in the browser.
+2. User views pages in the PDF workspace.
+3. User highlights text on a page.
+4. Frontend sends `text` and `page_number` to backend `POST /Translate`.
+5. Frontend displays returned translation and saves it in translation history.
 
-## React Compiler
+## API Contract (Current)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Request body:
 
-## Expanding the ESLint configuration
+```json
+{
+	"text": "selected text",
+	"page_number": 1
+}
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Response body:
+
+```json
+{
+	"translation": "..."
+}
+```
+
+or
+
+```json
+{
+	"error": "Text not found"
+}
+```
+
+## Important Future Feature (Not Implemented Yet)
+
+IMPORTANT NOTE:
+
+There is a backend API that does not currently exist but will be implemented later.
+
+That future API will parse uploaded PDFs and return structured JSON with extracted text and metadata (for example page numbers and positions).
+
+For now:
+
+- Keep using the current workflow (`text` + `page_number`).
+- Do not use IDs in request payloads.
+- Keep frontend code structured so future parsed-PDF JSON integration can be added with minimal UI changes.
+
+Integration boundary for this is defined in `src/api/translationApi.ts`.
+
+## Local Development
+
+From `frontend/`:
+
+```bash
+npm install
+npm run dev
+```
+
+The dev server proxies `/api/*` to `http://127.0.0.1:8000` via Vite config.
+
+## Quality Checks
+
+```bash
+npm run typecheck
+npm run build
+```
