@@ -42,18 +42,18 @@ def search_for_text(book_Jason , text , page_number):
     desired_page = None
     page_index = None
 
-    # 1️⃣ Find the page + BREAK
+    # Find the page + BREAK
     for page_i, page in enumerate(book_data['pages']):
         if page['page'] == page_number: 
             desired_page = page
             page_index = page_i
-            break   # ✅ FIX 1
+            break  
 
-    # 2️⃣ Handle page not found
+    # Handle page not found
     if desired_page is None:
-        return None   # ✅ FIX 2
+        return None   
 
-    # 3️⃣ Normalize text for exact match
+    # Normalize text for exact match
     def normalize(text):
         return re.sub(r'[^\w\s]', '', text.lower())
 
