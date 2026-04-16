@@ -1,0 +1,38 @@
+Important thing to undertand about PDF
+
+PDF files were designed primarily for visual document presentation, not for semantic 
+content representation. A PDF stores information about how text should appear on a 
+page, not what that text represents structurally.
+
+PDF has no logical structure at all you will not see in pdf element as :
+  -chapter - section - subsection - title -paragraph
+what a pdf consist of independent positioned fragments(text) with attributes :
+  -Character glyphs - Coordinates on the page - Font size - Font style
+
+For example, a paragraph in a PDF may internally appear as:
+  -Text fragment 1 at position (x1, y1) with font bla bla with size bla bla
+  -ex : 
+        BT start text
+        40 50 Td put text in 40 50
+        (ABC) Tj write it 
+        ET end 
+        -font size will define width and height of each glyphs and more   
+        - no logical structure at all
+
+From the file format's perspective, these are simply separate drawing instructions, not a 
+semantic paragraph .
+
+As a result, reconstructing logical structure requires reverse-engineering layout 
+decisions that were originally made for visual presentation rather than structural 
+encoding.
+
+this show us in not just a extract a the logicall structural of the book it is layout 
+interpretation problem not just a text extraction task.
+
+why there is no there is no Single Library That Solves This ? 
+ -these libraries focus on low-level text extraction, meaning they provide access to: 
+   -Characters -Spans -Font information -Bounding boxes -Page coordinates
+ -Every document layout is different and a rule to use for a book will differ for other
+ -Some documents use large fonts for titles, others use numbering schemes, while others rely on spacing or typography.
+ -most libraries provide primitive building blocks, leaving higher-level structure reconstruction to application-specific logic.
+ -this what we actually did we use the span as building block for building our logical strucutre 
