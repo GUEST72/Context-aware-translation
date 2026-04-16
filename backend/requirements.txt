@@ -1,0 +1,6 @@
+pymupdf
+fastapi
+uvicorn
+requests
+torch
+transformers
