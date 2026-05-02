@@ -7,6 +7,8 @@ from pydantic import BaseModel
 from Search.basicSearch import search_for_text
 from context.ContexBasicHandling import get_context
 from model.translator_pro import translate_function
+from parser.exporter import export_to_json
+import pymupdf
 
 app = FastAPI(title="Context-Aware Translation API", description="Translate text with contextual awareness")
 
@@ -46,7 +48,7 @@ def root():
 
 @app.post("/upload_pdf")
 async def upload_pdf(file: UploadFile = File(...)):
-    """Upload and store a PDF file"""
+    """Upload PDF, parse it, and generate output.json"""
     try:
         # Validate file type
         if file.content_type != "application/pdf" and not file.filename.endswith(".pdf"):
@@ -57,20 +59,32 @@ async def upload_pdf(file: UploadFile = File(...)):
         if len(content) > 50 * 1024 * 1024:
             raise HTTPException(status_code=400, detail="File size exceeds 50MB limit")
         
-        # Save file
+        # Save uploaded file
         file_path = UPLOAD_DIR / file.filename
         with open(file_path, "wb") as f:
             f.write(content)
         
+        # Parse PDF and generate JSON
+        doc = pymupdf.open(str(file_path))
+        parsed_data = export_to_json(doc, str(BOOK_PATH))
+        doc.close()
+        
+        # Reload BOOK_DATA with new content
+        global BOOK_DATA
+        with BOOK_PATH.open('r', encoding='utf-8') as f:
+            BOOK_DATA = json.load(f)
+        
         return {
-            "message": "File uploaded successfully",
+            "message": "PDF uploaded and parsed successfully",
             "filename": file.filename,
-            "file_path": str(file_path)
+            "file_path": str(file_path),
+            "pages_parsed": len(parsed_data.get("pages", [])),
+            "output_json": str(BOOK_PATH)
         }
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error uploading file: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error processing PDF: {str(e)}")
 
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
