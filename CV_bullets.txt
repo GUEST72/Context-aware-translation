@@ -1,0 +1,4 @@
+- Built a library-light PDF parsing pipeline that converts books into structured JSON (paragraphs, chapters, sections) using custom heuristics → enables reliable downstream translation and analysis.
+- Implemented retrieval-augmented terminology memory, context selection, and model integration via custom search and APIs reduces ambiguity in domain-specific translations and supports reproducible evaluation.
+- Added API-key management and secure search/context endpoints → enables multi-user experiments and controlled evaluations.
+- Upcoming research: developing methods to extract terminologies and document-level context from large books using retrieval and terminology-aware models in collaboration with faculty.
