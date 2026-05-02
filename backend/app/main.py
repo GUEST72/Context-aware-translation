@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from pydantic import BaseModel
 from Search.basicSearch import search_for_text
@@ -8,8 +9,20 @@ from context.ContexBasicHandling import get_context
 from model.translator_pro import translate_function
 
 app = FastAPI(title="Context-Aware Translation API", description="Translate text with contextual awareness")
+
+# Add CORS middleware to allow requests from React frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 BASE_DIR = Path(__file__).resolve().parent
 BOOK_PATH = BASE_DIR / "output.json"
+UPLOAD_DIR = BASE_DIR / "uploads"
+UPLOAD_DIR.mkdir(exist_ok=True)
 
 # 🔹 Load once (NOT per request)
 with BOOK_PATH.open('r', encoding='utf-8') as f:
@@ -30,9 +43,33 @@ def root():
     }
 
 
-@app.post("/uploud_book")
-def uploud_book():
-     pass
+@app.post("/upload_pdf")
+async def upload_pdf(file: UploadFile = File(...)):
+    """Upload and store a PDF file"""
+    try:
+        # Validate file type
+        if file.content_type != "application/pdf" and not file.filename.endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="File must be a PDF")
+        
+        # Check file size (max 50MB)
+        content = await file.read()
+        if len(content) > 50 * 1024 * 1024:
+            raise HTTPException(status_code=400, detail="File size exceeds 50MB limit")
+        
+        # Save file
+        file_path = UPLOAD_DIR / file.filename
+        with open(file_path, "wb") as f:
+            f.write(content)
+        
+        return {
+            "message": "File uploaded successfully",
+            "filename": file.filename,
+            "file_path": str(file_path)
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error uploading file: {str(e)}")
 
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
