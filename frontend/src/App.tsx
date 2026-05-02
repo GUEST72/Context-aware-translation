@@ -18,7 +18,7 @@ import {
   Upload,
 } from 'lucide-react'
 import { Document, Page, pdfjs } from 'react-pdf'
-import { requestTranslation } from './api/translationApi'
+import { requestTranslation, uploadPdf } from './api/translationApi'
 import { cn } from './lib/utils'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -135,15 +135,19 @@ function TopBar({
 function UploadScreen({
   onFileSelected,
   uploadError,
+  isUploading,
 }: {
   onFileSelected: (file: File) => void
   uploadError: string
+  isUploading: boolean
 }) {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const [isDragging, setIsDragging] = useState(false)
 
   function pickFile() {
-    inputRef.current?.click()
+    if (!isUploading) {
+      inputRef.current?.click()
+    }
   }
 
   function handleFiles(files: FileList | null) {
@@ -208,10 +212,23 @@ function UploadScreen({
               </p>
               <button
                 type="button"
-                className="primary-gradient inline-flex items-center gap-3 rounded-xl px-10 py-4 font-headline font-bold text-on-primary shadow-[0_10px_20px_rgba(0,226,238,0.2)] transition-all duration-300 active:scale-95"
+                disabled={isUploading}
+                className={cn(
+                  'primary-gradient inline-flex items-center gap-3 rounded-xl px-10 py-4 font-headline font-bold text-on-primary shadow-[0_10px_20px_rgba(0,226,238,0.2)] transition-all duration-300 active:scale-95',
+                  isUploading && 'opacity-70 cursor-not-allowed',
+                )}
               >
-                <Plus className="h-5 w-5" />
-                Select File
+                {isUploading ? (
+                  <>
+                    <div className="h-5 w-5 animate-spin rounded-full border-2 border-on-primary border-t-transparent" />
+                    Uploading...
+                  </>
+                ) : (
+                  <>
+                    <Plus className="h-5 w-5" />
+                    Select File
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -270,6 +287,7 @@ export default function App() {
   const [isTranslating, setIsTranslating] = useState(false)
   const [uploadError, setUploadError] = useState('')
   const [apiError, setApiError] = useState('')
+  const [isUploadingPdf, setIsUploadingPdf] = useState(false)
 
   const viewerRef = useRef<HTMLDivElement | null>(null)
   const abortRef = useRef<AbortController | null>(null)
@@ -331,8 +349,19 @@ export default function App() {
       return
     }
 
-    const objectUrl = URL.createObjectURL(file)
-    resetWorkspaceForFile(file, objectUrl)
+    setIsUploadingPdf(true)
+    setUploadError('')
+
+    uploadPdf(file)
+      .then((response) => {
+        const objectUrl = URL.createObjectURL(file)
+        resetWorkspaceForFile(file, objectUrl)
+        setIsUploadingPdf(false)
+      })
+      .catch((error) => {
+        setUploadError(error.message || 'Failed to upload PDF. Please try again.')
+        setIsUploadingPdf(false)
+      })
   }
 
   function handleSelectionFromPdf() {
@@ -437,7 +466,7 @@ export default function App() {
         <AnimatePresence mode="wait">
           {view === 'upload' ? (
             <div key="upload">
-              <UploadScreen onFileSelected={handleFileSelected} uploadError={uploadError} />
+              <UploadScreen onFileSelected={handleFileSelected} uploadError={uploadError} isUploading={isUploadingPdf} />
             </div>
           ) : (
             <motion.div
