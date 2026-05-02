@@ -29,6 +29,7 @@ def root():
         "docs": "/docs"
     }
 
+ 
 
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
