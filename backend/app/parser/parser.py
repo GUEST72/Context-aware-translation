@@ -1,5 +1,5 @@
 import pymupdf
-from objects import Span, Line, Paragraph
+from .objects import Span, Line, Paragraph
 
 
 

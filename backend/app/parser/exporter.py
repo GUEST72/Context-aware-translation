@@ -1,7 +1,7 @@
 import json
 import pymupdf
-from parser import get_spans_from_page, group_spans_into_lines, group_lines_into_paragraphs
-from classifier import classify_paragraphs
+from .parser import get_spans_from_page, group_spans_into_lines, group_lines_into_paragraphs
+from .classifier import classify_paragraphs
 
 def export_to_json(doc, output_path):
 

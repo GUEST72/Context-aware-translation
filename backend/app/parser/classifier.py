@@ -1,6 +1,6 @@
 import pymupdf
-from objects import Span, Line, Paragraph
-from parser import get_spans_from_page , group_spans_into_lines , group_lines_into_paragraphs
+from .objects import Span, Line, Paragraph
+from .parser import get_spans_from_page , group_spans_into_lines , group_lines_into_paragraphs
 
 import re
 
