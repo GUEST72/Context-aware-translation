@@ -30,6 +30,10 @@ def root():
     }
 
 
+@app.post("/uploud_book")
+def uploud_book():
+     pass
+
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
     text = text_to_trans.text
