@@ -1,6 +1,9 @@
 pymupdf
 fastapi
+python-multipart
 uvicorn
 requests
 torch
 transformers
+celery
+redis

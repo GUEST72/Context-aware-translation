@@ -1,14 +1,16 @@
 import json
+import uuid
 from pathlib import Path
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+from celery.result import AsyncResult
 from pydantic import BaseModel
 from Search.basicSearch import search_for_text
 from context.ContexBasicHandling import get_context
 from model.translator_pro import translate_function
-from parser.exporter import export_to_json
-import pymupdf
+from celery_config import celery_app
+from tasks import parse_pdf_task
 
 app = FastAPI(title="Context-Aware Translation API", description="Translate text with contextual awareness")
 
@@ -26,13 +28,16 @@ BOOK_PATH = BASE_DIR / "output.json"
 UPLOAD_DIR = BASE_DIR / "uploads"
 UPLOAD_DIR.mkdir(exist_ok=True)
 
-# 🔹 Load once (NOT per request)
-with BOOK_PATH.open('r', encoding='utf-8') as f:
-    BOOK_DATA = json.load(f)
-
 class Translate_Req(BaseModel):
     text: str
     page_number: int
+
+
+def _load_book_data() -> dict:
+    if not BOOK_PATH.exists():
+        raise HTTPException(status_code=503, detail="Parsed book data is not available yet")
+    with BOOK_PATH.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 @app.get("/")
@@ -46,10 +51,13 @@ def root():
 
  
 
-@app.post("/upload_pdf")
+@app.post("/upload_pdf", status_code=202)
 async def upload_pdf(file: UploadFile = File(...)):
-    """Upload PDF, parse it, and generate output.json"""
+    """Upload PDF, enqueue parse task, and return task metadata."""
     try:
+        if not file.filename:
+            raise HTTPException(status_code=400, detail="Missing file name")
+
         # Validate file type
         if file.content_type != "application/pdf" and not file.filename.endswith(".pdf"):
             raise HTTPException(status_code=400, detail="File must be a PDF")
@@ -60,31 +68,41 @@ async def upload_pdf(file: UploadFile = File(...)):
             raise HTTPException(status_code=400, detail="File size exceeds 50MB limit")
         
         # Save uploaded file
-        file_path = UPLOAD_DIR / file.filename
+        original_filename = Path(file.filename).name
+        suffix = Path(original_filename).suffix or ".pdf"
+        stored_filename = f"{uuid.uuid4().hex}{suffix}"
+        file_path = UPLOAD_DIR / stored_filename
         with open(file_path, "wb") as f:
             f.write(content)
-        
-        # Parse PDF and generate JSON
-        doc = pymupdf.open(str(file_path))
-        parsed_data = export_to_json(doc, str(BOOK_PATH))
-        doc.close()
-        
-        # Reload BOOK_DATA with new content
-        global BOOK_DATA
-        with BOOK_PATH.open('r', encoding='utf-8') as f:
-            BOOK_DATA = json.load(f)
-        
+
+        task = parse_pdf_task.delay(str(file_path), str(BOOK_PATH))
+
         return {
-            "message": "PDF uploaded and parsed successfully",
-            "filename": file.filename,
+            "message": "PDF uploaded. Parsing has been queued.",
+            "filename": original_filename,
+            "stored_filename": stored_filename,
             "file_path": str(file_path),
-            "pages_parsed": len(parsed_data.get("pages", [])),
-            "output_json": str(BOOK_PATH)
+            "task_id": task.id,
+            "task_status": "PENDING",
         }
     except HTTPException:
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing PDF: {str(e)}")
+
+
+@app.get("/upload_pdf/status/{task_id}")
+def upload_pdf_status(task_id: str):
+    """Check parsing task state and result."""
+    task = AsyncResult(task_id, app=celery_app)
+    response = {"task_id": task_id, "state": task.state}
+
+    if task.state == "SUCCESS":
+        response["result"] = task.result
+    elif task.state == "FAILURE":
+        response["error"] = str(task.result)
+
+    return response
 
 @app.post("/Translate")
 def translate(text_to_trans: Translate_Req):
@@ -99,7 +117,9 @@ def translate(text_to_trans: Translate_Req):
 
     if searched_text is None:
         return {"error": "Text not found"}
-    context_paragraph , target_text = get_context(search_output=searched_text ,book_obj=BOOK_DATA,target_text=text )
+
+    book_data = _load_book_data()
+    context_paragraph , target_text = get_context(search_output=searched_text ,book_obj=book_data,target_text=text )
     translation = translate_function(target_text,context_paragraph)
 
     return {

@@ -1,5 +1,4 @@
 import json
-import pymupdf
 from .parser import get_spans_from_page, group_spans_into_lines, group_lines_into_paragraphs
 from .classifier import classify_paragraphs
 
@@ -56,8 +55,3 @@ def export_to_json(doc, output_path):
 
     print(f"exported {len(pages_output)} pages to {output_path}")
     return result
-
-
-# --- run ---
-doc = pymupdf.open('/home/ahmed-walled/translateWithContext/backend/BookParsing/BooksToTry/dokumen.pub_algorithms-in-c-part-5-graph-algorithms-3rd-ed-0201361183-0785342361186-9780201361186.pdf')
-export_to_json(doc, "AlgoBook.json")
