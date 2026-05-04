@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total_requests": 1,
+    "success_count": 0,
+    "failure_count": 1,
+    "status_counts": {
+      "ERROR": 1
+    },
+    "latency_ms": {
+      "min": 17.533644000650384,
+      "avg": 17.533644000650384,
+      "p95": 17.533644000650384,
+      "max": 17.533644000650384
+    }
+  },
+  "results": [
+    {
+      "request_id": 1,
+      "status_code": "ERROR",
+      "elapsed_ms": 17.533644000650384,
+      "ok": false,
+      "body": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /upload_pdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x746b391d5550>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    }
+  ]
+}
