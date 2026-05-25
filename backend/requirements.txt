@@ -4,3 +4,6 @@ uvicorn
 requests
 torch
 transformers
+nltk
+spacy
+sentence-transformers
