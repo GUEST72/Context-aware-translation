@@ -1,12 +1,27 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App'
-import './index.css'
-import 'react-pdf/dist/Page/AnnotationLayer.css'
-import 'react-pdf/dist/Page/TextLayer.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { QueryClient } from "@tanstack/react-query";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { routeTree } from "./routeTree.gen";
+import "./styles.css";
 
-createRoot(document.getElementById('root')!).render(
+const queryClient = new QueryClient();
+
+const router = createRouter({
+  routeTree,
+  context: { queryClient },
+  scrollRestoration: true,
+  defaultPreloadStaleTime: 0,
+});
+
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router;
+  }
+}
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} context={{ queryClient }} />
   </StrictMode>,
-)
+);
