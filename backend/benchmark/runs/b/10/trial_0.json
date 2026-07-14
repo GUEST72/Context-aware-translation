@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "variant": "b",
+    "concurrency": 10,
+    "wall_clock_s": 1.7936865000010584,
+    "throughput_rps": 5.575110254770886,
+    "success_count": 10,
+    "timeout_count": 0,
+    "error_count": 0,
+    "status_counts": {
+      "200": 10
+    },
+    "latency_ms": {
+      "min": 1200.7533390005847,
+      "p50": 1713.4258340011002,
+      "p95": 1714.7516430013638,
+      "p99": 1714.7516430013638,
+      "max": 1714.7516430013638
+    },
+    "health_probe": {
+      "sample_count": 5,
+      "failed_count": 0,
+      "latency_ms": {
+        "min": 59.517194998989,
+        "p50": 194.39403700016555,
+        "p95": 489.56606200044916,
+        "p99": 489.56606200044916,
+        "max": 489.56606200044916
+      }
+    },
+    "resources": {
+      "peak_cpu_percent_sum": 131.7,
+      "peak_rss_mb": 232.4453125,
+      "peak_thread_count": 11,
+      "peak_process_count": 1
+    }
+  },
+  "results": [
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.7139341429992783,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.7137741349997668,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.7147516430013638,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.2007533390005847,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.5013690539999516,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.714092404999974,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.7122338420012966,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.714409488000456,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.5699911909996445,
+      "timed_out": false
+    },
+    {
+      "ok": true,
+      "status_code": 200,
+      "elapsed_s": 1.7134258340011002,
+      "timed_out": false
+    }
+  ],
+  "health_samples": [
+    {
+      "t": 13460.272952244,
+      "elapsed_s": 0.059517194998989,
+      "ok": true
+    },
+    {
+      "t": 13460.433526376,
+      "elapsed_s": 0.19439403700016555,
+      "ok": true
+    },
+    {
+      "t": 13460.729645179,
+      "elapsed_s": 0.37158286399971985,
+      "ok": true
+    },
+    {
+      "t": 13461.202204313,
+      "elapsed_s": 0.14460505500028376,
+      "ok": true
+    },
+    {
+      "t": 13461.447877829,
+      "elapsed_s": 0.48956606200044916,
+      "ok": true
+    }
+  ],
+  "resource_samples": [
+    {
+      "t": 1784036307.2696042,
+      "cpu_percent_sum": 0.0,
+      "rss_mb": 203.7578125,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036307.4822676,
+      "cpu_percent_sum": 131.7,
+      "rss_mb": 216.53125,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036307.6956148,
+      "cpu_percent_sum": 103.1,
+      "rss_mb": 224.68359375,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036307.9080846,
+      "cpu_percent_sum": 103.5,
+      "rss_mb": 226.0546875,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036308.1190934,
+      "cpu_percent_sum": 104.3,
+      "rss_mb": 226.5546875,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036308.3300595,
+      "cpu_percent_sum": 99.5,
+      "rss_mb": 228.984375,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036308.540498,
+      "cpu_percent_sum": 104.5,
+      "rss_mb": 231.0078125,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036308.7533717,
+      "cpu_percent_sum": 103.4,
+      "rss_mb": 231.06640625,
+      "thread_count": 11,
+      "process_count": 1
+    },
+    {
+      "t": 1784036308.9642534,
+      "cpu_percent_sum": 99.6,
+      "rss_mb": 232.4453125,
+      "thread_count": 11,
+      "process_count": 1
+    }
+  ]
+}

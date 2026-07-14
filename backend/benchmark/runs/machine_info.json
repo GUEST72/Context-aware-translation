@@ -1,0 +1,13 @@
+{
+  "cpu_count": 12,
+  "celery_concurrency": 12,
+  "load_levels": [
+    10,
+    100,
+    1000
+  ],
+  "trials_per_level": 3,
+  "warmup_runs": 1,
+  "pdf": "/home/ahmed-walled/Projects/Context-aware-translation/backend/benchmark/fixtures/bench_book.pdf",
+  "pdf_size_bytes": 2825232
+}

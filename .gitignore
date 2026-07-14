@@ -1,1 +1,3 @@
 .env
+backend/app/bench_uploads/
+backend/app/bench_outputs/

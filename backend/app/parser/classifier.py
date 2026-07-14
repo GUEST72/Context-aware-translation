@@ -77,22 +77,3 @@ def classify_paragraphs(paragraphs):
             continue
 
     return paragraphs
-# --- run ---
-doc = pymupdf.open('/home/ahmed-walled/translateWithContext/backend/BookParsing/BooksToTry/computer-networking-a-top-down-approach-8th-edition.pdf')
-
-'''
-page       = doc[14]
-blocks = page.get_text("blocks" , sort=True)
-for block in blocks :
-    print(block , "\n");
-'''
-
-for page in doc[12:13]:
-    spans      = get_spans_from_page(page)
-    lines      = group_spans_into_lines(spans)
-    paragraphs = group_lines_into_paragraphs(lines)
-    classify_paragraphs(paragraphs)
-    
-    for para in paragraphs :
-        print(para)
-        print("\n");
