@@ -20,13 +20,13 @@ written before the full-load results came in: `PREDICTIONS.md`.
   instruction, documented here for reproducibility.
 - **Load levels:** 10 / 100 / 1000 concurrent requests, 1 discarded warm-up + 3 real
   trials per (variant, load) cell, server restarted fresh between variants
-  (`run_benchmark.py`). 3 trials instead of the requested 3-5, to keep total runtime
+  (`benchmark.py run`). 3 trials instead of the requested 3-5, to keep total runtime
   practical given variant A/B's 1000-concurrency trials take minutes each.
 - **Threadpool ceiling (variant B):** Starlette/AnyIO default worker-thread limiter, 40.
 - **Celery (variant C):** `--concurrency=12` (`= os.cpu_count()`), prefork pool, Redis
   6379 broker+backend (`redis:7-alpine` via Docker, no host package changes).
 - **Per-request timeout:** 180s end-to-end (for C, that's enqueue + poll-until-SUCCESS).
-- **Driver:** custom `asyncio` + `httpx` script (`load_driver.py`), not Locust/k6, per your
+- **Driver:** custom `asyncio` + `httpx` script (`benchmark.py drive`), not Locust/k6, per your
   choice. It fires all N requests concurrently via `asyncio.gather`, polls
   `/upload_pdf/status/{task_id}` every 100ms for variant C, probes `/health` every ~100ms
   throughout the run on a separate client, and samples CPU%/RSS/thread-or-process count of
@@ -37,14 +37,14 @@ written before the full-load results came in: `PREDICTIONS.md`.
     hard-opened an absolute path from a different machine on import — this crashed every
     import of the parser, including the existing Celery worker. Removed.
   - Each benchmark variant writes both the uploaded file and the parsed JSON output to a
-    UUID-named path per request (`bench_common.py`), never touching the real app's shared
+    UUID-named path per request (`unique_paths()` in `benchmark.py`), never touching the real app's shared
     `BOOK_PATH`/`BOOK_DATA` global.
 
 ## One important correction to the brief's own hypothesis
 
 The brief's caveat was: *"pymupdf may release the GIL during native parsing... variant B
 might outperform a naive CPU-bound expectation."* I measured this directly
-(`gil_profile.py`) before running the load matrix:
+(`benchmark.py gil-profile`) before running the load matrix:
 
 - Of the ~150-160ms to parse one request, ~98% is inside `get_spans_from_page()`'s call to
   `page.get_text("dict")` — the actual MuPDF C call — and only ~1.7% is pure-Python
